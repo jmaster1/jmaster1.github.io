@@ -202,165 +202,17 @@ blockquote { background: none; font-size:130%; margin: 0; top: 0; font-style: it
 		</div>
 
 		
-		<!-- mfn_hook_content_before --><!-- mfn_hook_content_before -->
 <div id="Content">
 	<div class="content_wrapper clearfix">
-
 		<div class="sections_group">
-
 			<div class="entry-content" itemprop="mainContentOfPage">
-
-				<div class="section mcb-section mcb-section-434b93448  equal-height-wrap bg-cover" style="background-color:#fb8819"><div class="section_wrapper mcb-section-inner"><div class="wrap mcb-wrap mcb-wrap-097a49a4d one-fourth  valign-middle bg-cover clearfix" style="padding:20px"><div class="mcb-wrap-inner"><div class="column mcb-column mcb-item-0d7df2e0d one column_image"><div class="image_frame image_item no_link scale-with-grid aligncenter no_border hover-disable"><div class="image_wrapper"><img class="scale-with-grid" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20164%20300'%3E%3C/svg%3E" alt="ИТ решения" title="" width="164" height="300" data-lazy-src="../wp-content/uploads/diright-it.png"><noscript><img class="scale-with-grid" src="../wp-content/uploads/diright-it.png" alt="ИТ решения" title="" width="164" height="300"></noscript></div></div>
-</div></div></div><div class="wrap mcb-wrap mcb-wrap-66e947edb three-fourth  column-margin-0px valign-top bg-cover clearfix" style="padding:20px 0px 0px 0px "><div class="mcb-wrap-inner"><div class="column mcb-column mcb-item-33ed57e00 one column_column"><div class="column_attr clearfix mobile_align_center" style="padding:20px 0px 40px 0px;"><p style="color: #FFFFFF; font-size:180%; font-weight:600;">Профессиональный ИТ сервис провайдер!<br> <br>Комплексные решения по построению и сопровождению инфраструктуры. </p><br><span style="color: #FFFFFF; font-size:180%; font-weight:600;">ИТ-услуги для бизнеса:
-		<div class="type-wrap" style="display:none;">
-		  <div id="typed-strings"><p> WEB разработка </p><p> продвижение сайтов </p><p> Аутсорсинг </p><p> Консалтинг </p><p> Аудит</p></div>
-		  <span id="typed"></span>
-		</div>
-		<script type="rocketlazyloadscript">
-	    jQuery(function($){
-	    $('.type-wrap').show();
-	        $('#typed').typed({
-	            stringsElement: $('#typed-strings'),
-	            typeSpeed: 60,
-	            startDelay: 800,
-	            backDelay: 1002,
-	            backSpeed: 1,
-							smartBackspace: 1,
-	            loop: true,
-	            cursorChar: "|",
-	            contentType: 'html', // or text
-	            // call when done callback function
-	            callback: function() {},
-	            // starting callback function before each string
-	            preStringTyped: function() {},
-	            //callback for every typed string
-		          onStringTyped: function() {},
-	            loopCount: false,
-	            // callback for reset
-	            resetCallback: function() { newTyped(); }
-	        });
-	        $('.reset').click(function(){
-	            $('#typed').typed('reset');
-	        });
-	    });
-	    </script>
-			
-		</span>
-</div></div></div></div></div></div><div class="section mcb-section mcb-section-28d1508fd dark" id="home_testimonials" style="padding-top:60px;padding-bottom:15px;background-color:#09142f"><div class="section_wrapper mcb-section-inner"><div class="wrap mcb-wrap mcb-wrap-70ed69179 one  valign-top clearfix" style=""><div class="mcb-wrap-inner"><div class="column mcb-column mcb-item-e720b2d2e one column_column"><div class="column_attr clearfix align_center" style=""><h1>IT решения для бизнеса</h1>
-<p><span class="" style="font-size:150%; font-weight:500;">Построение и сопровождение инфраструктуры любого масштаба, которое базируется на современных методах управления сервисами и использовании эффективных информационно-управленческих систем.</span></p>
-<p><span class="" style="font-size:200%; font-weight:600;">Дирайт — Правильные ИТ решения!</span></p>
-</div></div></div></div></div></div><div class="section mcb-section mcb-section-09e6d6924  equal-height" style="padding-top:70px;padding-bottom:70px;background-color:#f1f7fb"><div class="section_wrapper mcb-section-inner"><div class="wrap mcb-wrap mcb-wrap-dbbfb7532 one-second  valign-top bg-cover clearfix" style=""><div class="mcb-wrap-inner"><div class="column mcb-column mcb-item-b33f447fc one-second column_hover_color"><div class="hover_color align_" style="background-color:#ffffff;border-color:#0095ee;" ontouchstart="this.classList.toggle('hover');"><div class="hover_color_bg" style="background-color:#ffffff;border-color:#e4e7f1;border-width:2px;"><a href="../it-uslugi/sozdanie-saytov/index.htm" class=""><div class="hover_color_wrapper" style="padding:40px 30px;"><img width="140" height="140" class="scale-with-grid" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20140%20140'%3E%3C/svg%3E" alt="Создание сайтов" data-lazy-src="/wp-content/uploads/razrabotka-saytov.png"><noscript><img width="140" height="140" class="scale-with-grid" src="../wp-content/uploads/razrabotka-saytov.png" alt="Создание сайтов"></noscript>
-<hr class="hr_color" style="margin-top:15px;">
-<h2>Создание сайтов</h2>
-
-</div></a></div>
-</div>
-</div><div class="column mcb-column mcb-item-8275f9d3b one-second column_hover_color"><div class="hover_color align_" style="background-color:#ffffff;border-color:#0095ee;" ontouchstart="this.classList.toggle('hover');"><div class="hover_color_bg" style="background-color:#ffffff;border-color:#e4e7f1;border-width:2px;"><a href="../it-uslugi/podderzhka-i-obsluzhivanie-saytov/index.htm" class=""><div class="hover_color_wrapper" style="padding:40px 30px;"><img width="140" height="140" class="scale-with-grid" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20140%20140'%3E%3C/svg%3E" alt="Поддержка сайтов" data-lazy-src="/wp-content/uploads/podderzhka-saytov-2.png"><noscript><img width="140" height="140" class="scale-with-grid" src="../wp-content/uploads/podderzhka-saytov-2.png" alt="Поддержка сайтов"></noscript>
-<hr class="hr_color" style="margin-top:15px;">
-<h2>Поддержка сайтов</h2>
-</div></a></div>
-</div>
-</div><div class="column mcb-column mcb-item-c3d91fa05 one column_divider"><hr class="no_line" style="margin: 0 auto 0px auto">
-</div></div></div><div class="wrap mcb-wrap mcb-wrap-31bbe8b95 one-second  valign-top bg-cover clearfix" style=""><div class="mcb-wrap-inner"><div class="column mcb-column mcb-item-979ce0ed3 one-second column_hover_color"><div class="hover_color align_" style="background-color:#ffffff;border-color:#0095ee;" ontouchstart="this.classList.toggle('hover');"><div class="hover_color_bg" style="background-color:#ffffff;border-color:#e4e7f1;border-width:2px;"><a href="../it-uslugi/seo-prodvizhenie-saytov/index.htm" class=""><div class="hover_color_wrapper" style="padding:40px 30px;"><img width="140" height="140" class="scale-with-grid" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20140%20140'%3E%3C/svg%3E" alt="Продвижение сайтов" data-lazy-src="/wp-content/uploads/seo-prodvizhenie.png"><noscript><img width="140" height="140" class="scale-with-grid" src="../wp-content/uploads/seo-prodvizhenie.png" alt="Продвижение сайтов"></noscript>
-<hr class="hr_color" style="margin-top:15px;">
-<h2>Продвижение сайтов</h2>
-</div></a></div>
-</div>
-</div><div class="column mcb-column mcb-item-1be8241de one-second column_hover_color"><div class="hover_color align_" style="background-color:#ffffff;border-color:#0095ee;" ontouchstart="this.classList.toggle('hover');"><div class="hover_color_bg" style="background-color:#ffffff;border-color:#e4e7f1;border-width:2px;"><a href="../it-uslugi/vnedrenie-crm-sistemy/index.htm" class=""><div class="hover_color_wrapper" style="padding:40px 30px;"><img width="140" height="140" class="scale-with-grid" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20140%20140'%3E%3C/svg%3E" alt="Внедрение CRM систем" data-lazy-src="/wp-content/uploads/vnedrenie-crm-sistemy.png"><noscript><img width="140" height="140" class="scale-with-grid" src="../wp-content/uploads/vnedrenie-crm-sistemy.png" alt="Внедрение CRM систем"></noscript>
-<hr class="hr_color" style="margin-top:15px;">
-<h2>Внедрение CRM систем</h2>
-</div></a></div>
-</div>
-</div><div class="column mcb-column mcb-item-7ea3735bf one column_divider"><hr class="no_line" style="margin: 0 auto 0px auto">
-</div></div></div><div class="wrap mcb-wrap mcb-wrap-dbe7b7ac3 divider  valign-top clearfix" style=""><div class="mcb-wrap-inner"><div class="mfn-drag-helper placeholder-wrap"></div></div></div><div class="wrap mcb-wrap mcb-wrap-e5f268117 one-second  valign-top bg-cover clearfix" style=""><div class="mcb-wrap-inner"><div class="column mcb-column mcb-item-03815d408 one column_divider"><hr class="no_line" style="margin: 0 auto 0px auto">
-</div><div class="column mcb-column mcb-item-500d154d4 one-second column_hover_color"><div class="hover_color align_" style="background-color:#ffffff;border-color:#0095ee;" ontouchstart="this.classList.toggle('hover');"><div class="hover_color_bg" style="background-color:#ffffff;border-color:#e4e7f1;border-width:2px;"><a href="../it-uslugi/obsluzhivanie-kompyuterov/index.htm" class=""><div class="hover_color_wrapper" style="padding:40px 30px;"><img width="140" height="140" class="scale-with-grid" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20140%20140'%3E%3C/svg%3E" alt="ИТ-Аутсорсинг" data-lazy-src="/wp-content/uploads/obsluzhivanie-kompyuterov.png"><noscript><img width="140" height="140" class="scale-with-grid" src="../wp-content/uploads/obsluzhivanie-kompyuterov.png" alt="ИТ-Аутсорсинг"></noscript>
-<hr class="hr_color" style="margin-top:15px;">
-<h2>ИТ-Аутсорсинг</h2>
-</div></a></div>
-</div>
-</div><div class="column mcb-column mcb-item-27d955268 one-second column_hover_color"><div class="hover_color align_" style="background-color:#ffffff;border-color:#0095ee;" ontouchstart="this.classList.toggle('hover');"><div class="hover_color_bg" style="background-color:#ffffff;border-color:#e4e7f1;border-width:2px;"><a href="../it-uslugi/it-konsalting/index.htm" class=""><div class="hover_color_wrapper" style="padding:40px 30px;"><img width="140" height="140" class="scale-with-grid" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20140%20140'%3E%3C/svg%3E" alt="ИТ-Консалтинг" data-lazy-src="/wp-content/uploads/it-konsalting.png"><noscript><img width="140" height="140" class="scale-with-grid" src="../wp-content/uploads/it-konsalting.png" alt="ИТ-Консалтинг"></noscript>
-<hr class="hr_color" style="margin-top:15px;">
-
-  <h2>ИТ-Консалтинг</h2>
-
-
-</div></a></div>
-</div>
-</div></div></div><div class="wrap mcb-wrap mcb-wrap-7c0398312 one-second  valign-top bg-cover clearfix" style=""><div class="mcb-wrap-inner"><div class="column mcb-column mcb-item-a95562ca4 one column_divider"><hr class="no_line" style="margin: 0 auto 0px auto">
-</div><div class="column mcb-column mcb-item-8da38544c one-second column_hover_color"><div class="hover_color align_" style="background-color:#ffffff;border-color:#0095ee;" ontouchstart="this.classList.toggle('hover');"><div class="hover_color_bg" style="background-color:#ffffff;border-color:#e4e7f1;border-width:2px;"><a href="../it-uslugi/it-audit/index.htm" class=""><div class="hover_color_wrapper" style="padding:40px 30px;"><img class="scale-with-grid" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="ИТ-Аудит" data-lazy-src="/wp-content/uploads/it-audit.png"><noscript><img class="scale-with-grid" src="/wp-content/uploads/it-audit.png" alt="ИТ-Аудит"></noscript>
-<hr class="hr_color" style="margin-top:15px;">
-<h2>ИТ-Аудит </h2>
-</div></a></div>
-</div>
-</div><div class="column mcb-column mcb-item-d113b4698 one-second column_hover_color"><div class="hover_color align_" style="background-color:#ffffff;border-color:#0095ee;" ontouchstart="this.classList.toggle('hover');"><div class="hover_color_bg" style="background-color:#ffffff;border-color:#e4e7f1;border-width:2px;"><a href="../it-uslugi/razrabotka-programmnogo-obespecheniya/index.htm" class=""><div class="hover_color_wrapper" style="padding:40px 30px;"><img width="140" height="140" class="scale-with-grid" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20140%20140'%3E%3C/svg%3E" alt="Разработка ПО" data-lazy-src="/wp-content/uploads/razrabotka-programmnogo-obespecheniya.png"><noscript><img width="140" height="140" class="scale-with-grid" src="../wp-content/uploads/razrabotka-programmnogo-obespecheniya.png" alt="Разработка ПО"></noscript>
-<hr class="hr_color" style="margin-top:15px;">
-<h2>Разработка ПО</h2>
-</div></a></div>
-</div>
-</div></div></div><div class="wrap mcb-wrap mcb-wrap-bebed5536 one  column-margin-0px valign-top clearfix" style=""><div class="mcb-wrap-inner"><div class="column mcb-column mcb-item-0b9619b76 one column_hover_color"><div class="hover_color align_" style="background-color:#ffffff;border-color:#0095ee;" ontouchstart="this.classList.toggle('hover');"><div class="hover_color_bg" style="background-color:#ffffff;border-color:#e4e7f1;border-width:2px;"><a href="../it-uslugi/index.htm" class=""><div class="hover_color_wrapper" style=""><span class="themecolor" style="font-size:150%; font-weight:400;">Все ИТ-решения</span>
-</div></a></div>
-</div>
-</div></div></div></div></div><div class="section mcb-section mcb-section-cb4b20f2f" style="padding-top:70px;padding-bottom:30px"><div class="section_wrapper mcb-section-inner"><div class="wrap mcb-wrap mcb-wrap-4eafca866 one  valign-top clearfix" style="padding:0 3% 0 0"><div class="mcb-wrap-inner"><div class="column mcb-column mcb-item-616cd67e4 one column_column"><div class="column_attr clearfix" style=""><p style="font-size:170%; font-weight:700;">IT-решения для цифровизации</p>
-<hr style="height:1px; background-color:#626262;">
-<p style="font-size:150%; font-weight:500;">Цифровая трансформация бизнеса</p>
-Разрабатываем, внедряем, сопровождаем и развиваем информационные технологии. Помогаем бизнесу сокращать расходы и создавать сервисы. Создание прогрессивных информационных решений предполагает прорабатывание индивидуального подхода для каждой компании. Специалисты учитывают инфраструктурные особенности организации, принимают во внимание объем и процесс производства, не оставляя без участия иные, не менее важные, факторы.</div></div></div></div><div class="wrap mcb-wrap mcb-wrap-2t8udu8lf one  valign-top clearfix" style=""><div class="mcb-wrap-inner"><div class="column mcb-column mcb-item-667ciblb8 one-second column_icon_box"><div class="icon_box icon_position_left no_border"><div class="icon_wrapper"><div class="icon"><i class="fas fa-layer-group"></i></div></div><div class="desc_wrapper"><h4 class="title">Комплексно</h4><div class="desc">Разработка и поддержка программных продуктов, внедрение цифровых сервисов, поставка и обслуживание оборудования, обеспечение информационной безопасности, консалтинг и многое другое.</div></div></div>
-</div><div class="column mcb-column mcb-item-5apqsd6ct one-second column_icon_box"><div class="icon_box icon_position_left no_border"><div class="icon_wrapper"><div class="icon"><i class="fas fa-key"></i></div></div><div class="desc_wrapper"><h4 class="title">Под ключ</h4><div class="desc">Выполняем задачи от начала и до конца — сопровождение запуска и эксплуатации нового продукта или аутсорсинг поддержки инфраструктуры, подбор, поставка и внедрение ПО и оборудования.</div></div></div>
-</div><div class="column mcb-column mcb-item-8ucbaxt72 one column_divider"><hr class="no_line" style="margin: 0 auto 0px auto">
-</div><div class="column mcb-column mcb-item-9ebum38y3 one-second column_icon_box"><div class="icon_box icon_position_left no_border"><div class="icon_wrapper"><div class="icon"><i class="icon-shuffle"></i></div></div><div class="desc_wrapper"><h4 class="title">Гибкость в работе</h4><div class="desc">Работаем с инфраструктурой любой сложности. Практикуем применение как коробочных, так и кастомизированных продуктов даже для нестандартных задач. Способны быстро подготовиться к работе с новыми видами оборудования могут пройти соответствующую сертификацию. При необходимости привлекаем лучших и проверенных технологических партнеров на рынке.</div></div></div>
-</div><div class="column mcb-column mcb-item-nzjnrf0e9 one-second column_icon_box"><div class="icon_box icon_position_left no_border"><div class="icon_wrapper"><div class="icon"><i class="fas fa-star"></i></div></div><div class="desc_wrapper"><h4 class="title">Опыт и экспертиза</h4><div class="desc">IT компания «Дирайт» на рынке с 2011 г. Реализовали огромное количество проектов для разных бизнес сфер и направлений, как в Москве, так и по России. Сотрудничаем с самыми известными разработчиками программных и аппаратных платформ и можем привлечь лучшую цифровую экспертизу для проектов.</div></div></div>
-</div></div></div></div></div><div class="section mcb-section mcb-section-432030273  full-width" style="padding-top:30px"><div class="section_wrapper mcb-section-inner"><div class="wrap mcb-wrap mcb-wrap-b3e404b5f one-second  column-margin-0px valign-middle clearfix" style="padding:3% 0;background-color:#00cdc1"><div class="mcb-wrap-inner"><div class="column mcb-column mcb-item-f6e1093f4 one column_column column-margin-0px"><div class="column_attr clearfix" style=""><div style="position:relative;"><img width="764" height="396" class="scale-with-grid" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20764%20396'%3E%3C/svg%3E" alt="Поделись ИТ решением" data-lazy-src="/wp-content/uploads/ruporbg.png"><noscript><img width="764" height="396" class="scale-with-grid" src="../wp-content/uploads/ruporbg.png" alt="Поделись ИТ решением"></noscript>
-<div style="position:absolute; top:20px; right:5%; width:50%;">
-<span class="" style="color:#ffffff; font-size:200%; font-weight:600;">Подскажи друзьям <br>правильное ИТ-решение!</span>
-<div class="heateor_sss_sharing_container heateor_sss_vertical_sharing heateor_sss_bottom_sharing" data-heateor-ss-offset="0" data-heateor-sss-href='https://diright.ru/' style="-webkit-box-shadow:none;box-shadow:none;left: 0px; top: 100px;width:49px;"><div class="heateor_sss_sharing_ul"><a class="heateor_sss_facebook" href="../cookie/consent_prompt/index.htm?u=https%3A/diright.ru" title="Facebook" rel="nofollow noopener" target="_blank" style="font-size:32px!important;box-shadow:none;display:inline-block;vertical-align:middle"><span class="heateor_sss_svg" style="background-color:#3c589a;width:45px;height:45px;margin:0;display:inline-block;opacity:1;float:left;font-size:32px;box-shadow:none;display:inline-block;font-size:16px;padding:0 4px;vertical-align:middle;background-repeat:repeat;overflow:hidden;padding:0;cursor:pointer;box-sizing:content-box"><svg style="display:block;" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="-5 -5 42 42"><path d="M17.78 27.5V17.008h3.522l.527-4.09h-4.05v-2.61c0-1.182.33-1.99 2.023-1.99h2.166V4.66c-.375-.05-1.66-.16-3.155-.16-3.123 0-5.26 1.905-5.26 5.405v3.016h-3.53v4.09h3.53V27.5h4.223z" fill="#fff"></path></svg></span></a><a class="heateor_sss_button_vkontakte" href="http://vkontakte.ru/share.php?&url=https%3A%2F%2Fdiright.ru" title="Vkontakte" rel="nofollow noopener" target="_blank" style="font-size:32px!important;box-shadow:none;display:inline-block;vertical-align:middle"><span class="heateor_sss_svg heateor_sss_s__default heateor_sss_s_vkontakte" style="background-color:#0077FF;width:45px;height:45px;margin:0;display:inline-block;opacity:1;float:left;font-size:32px;box-shadow:none;display:inline-block;font-size:16px;padding:0 4px;vertical-align:middle;background-repeat:repeat;overflow:hidden;padding:0;cursor:pointer;box-sizing:content-box"><svg fill="none" height="100%" width="100%" viewbox="0.75 15 46 17" xmlns="http://www.w3.org/2000/svg"><path d="M25.54 34.58c-10.94 0-17.18-7.5-17.44-19.98h5.48c.18 9.16 4.22 13.04 7.42 13.84V14.6h5.16v7.9c3.16-.34 6.48-3.94 7.6-7.9h5.16c-.86 4.88-4.46 8.48-7.02 9.96 2.56 1.2 6.66 4.34 8.22 10.02h-5.68c-1.22-3.8-4.26-6.74-8.28-7.14v7.14z" fill="#fff"></path></svg></span></a><a class="heateor_sss_button_twitter" href="http://twitter.com/intent/tweet?text=IT%20%D1%83%D1%81%D0%BB%D1%83%D0%B3%D0%B8%20%D0%B4%D0%BB%D1%8F%20%D0%B1%D0%B8%D0%B7%D0%BD%D0%B5%D1%81%D0%B0%20%7C%20%D0%94%D0%B8%D1%80%D0%B0%D0%B9%D1%82%20-%20%D0%9F%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5%20%D0%98%D0%A2%20%D1%80%D0%B5%D1%88%D0%B5%D0%BD%D0%B8%D1%8F&url=https%3A%2F%2Fdiright.ru" title="Twitter" rel="nofollow noopener" target="_blank" style="font-size:32px!important;box-shadow:none;display:inline-block;vertical-align:middle"><span class="heateor_sss_svg heateor_sss_s__default heateor_sss_s_twitter" style="background-color:#55acee;width:45px;height:45px;margin:0;display:inline-block;opacity:1;float:left;font-size:32px;box-shadow:none;display:inline-block;font-size:16px;padding:0 4px;vertical-align:middle;background-repeat:repeat;overflow:hidden;padding:0;cursor:pointer;box-sizing:content-box"><svg style="display:block;" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="-4 -4 39 39"><path d="M28 8.557a9.913 9.913 0 0 1-2.828.775 4.93 4.93 0 0 0 2.166-2.725 9.738 9.738 0 0 1-3.13 1.194 4.92 4.92 0 0 0-3.593-1.55 4.924 4.924 0 0 0-4.794 6.049c-4.09-.21-7.72-2.17-10.15-5.15a4.942 4.942 0 0 0-.665 2.477c0 1.71.87 3.214 2.19 4.1a4.968 4.968 0 0 1-2.23-.616v.06c0 2.39 1.7 4.38 3.952 4.83-.414.115-.85.174-1.297.174-.318 0-.626-.03-.928-.086a4.935 4.935 0 0 0 4.6 3.42 9.893 9.893 0 0 1-6.114 2.107c-.398 0-.79-.023-1.175-.068a13.953 13.953 0 0 0 7.55 2.213c9.056 0 14.01-7.507 14.01-14.013 0-.213-.005-.426-.015-.637.96-.695 1.795-1.56 2.455-2.55z" fill="#fff"></path></svg></span></a><a class="heateor_sss_button_odnoklassniki" href="https://connect.ok.ru/dk?cmd=WidgetSharePreview&st.cmd=WidgetSharePreview&st.shareUrl=https%3A%2F%2Fdiright.ru&st.client_id=-1" title="Odnoklassniki" rel="nofollow noopener" target="_blank" style="font-size:32px!important;box-shadow:none;display:inline-block;vertical-align:middle"><span class="heateor_sss_svg heateor_sss_s__default heateor_sss_s_odnoklassniki" style="background-color:#f2720c;width:45px;height:45px;margin:0;display:inline-block;opacity:1;float:left;font-size:32px;box-shadow:none;display:inline-block;font-size:16px;padding:0 4px;vertical-align:middle;background-repeat:repeat;overflow:hidden;padding:0;cursor:pointer;box-sizing:content-box"><svg style="display:block;" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 0 32 32"><path fill="#fff" d="M16 16.16a6.579 6.579 0 0 1-6.58-6.58A6.578 6.578 0 0 1 16 3a6.58 6.58 0 1 1 .002 13.16zm0-9.817a3.235 3.235 0 0 0-3.236 3.237 3.234 3.234 0 0 0 3.237 3.236 3.236 3.236 0 1 0 .004-6.473zm7.586 10.62c.647 1.3-.084 1.93-1.735 2.99-1.395.9-3.313 1.238-4.564 1.368l1.048 1.05 3.877 3.88c.59.59.59 1.543 0 2.133l-.177.18c-.59.59-1.544.59-2.134 0l-3.88-3.88-3.877 3.88c-.59.59-1.543.59-2.135 0l-.176-.18a1.505 1.505 0 0 1 0-2.132l3.88-3.877 1.042-1.046c-1.25-.127-3.19-.465-4.6-1.37-1.65-1.062-2.38-1.69-1.733-2.99.37-.747 1.4-1.367 2.768-.29C13.035 18.13 16 18.13 16 18.13s2.968 0 4.818-1.456c1.368-1.077 2.4-.457 2.768.29z"></path></svg></span></a><a class="heateor_sss_button_telegram" href="https://telegram.me/share/url?url=https%3A%2F%2Fdiright.ru&text=IT%20%D1%83%D1%81%D0%BB%D1%83%D0%B3%D0%B8%20%D0%B4%D0%BB%D1%8F%20%D0%B1%D0%B8%D0%B7%D0%BD%D0%B5%D1%81%D0%B0%20%7C%20%D0%94%D0%B8%D1%80%D0%B0%D0%B9%D1%82%20-%20%D0%9F%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5%20%D0%98%D0%A2%20%D1%80%D0%B5%D1%88%D0%B5%D0%BD%D0%B8%D1%8F" title="Telegram" rel="nofollow noopener" target="_blank" style="font-size:32px!important;box-shadow:none;display:inline-block;vertical-align:middle"><span class="heateor_sss_svg heateor_sss_s__default heateor_sss_s_telegram" style="background-color:#3da5f1;width:45px;height:45px;margin:0;display:inline-block;opacity:1;float:left;font-size:32px;box-shadow:none;display:inline-block;font-size:16px;padding:0 4px;vertical-align:middle;background-repeat:repeat;overflow:hidden;padding:0;cursor:pointer;box-sizing:content-box"><svg style="display:block;" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 0 32 32"><path fill="#fff" d="M25.515 6.896L6.027 14.41c-1.33.534-1.322 1.276-.243 1.606l5 1.56 1.72 5.66c.226.625.115.873.77.873.506 0 .73-.235 1.012-.51l2.43-2.363 5.056 3.734c.93.514 1.602.25 1.834-.863l3.32-15.638c.338-1.363-.52-1.98-1.41-1.577z"></path></svg></span></a><a class="heateor_sss_more" title="More" rel="nofollow noopener" style="font-size: 32px!important;border:0;box-shadow:none;display:inline-block!important;font-size:16px;padding:0 4px;vertical-align: middle;display:inline;" href="../index.htm" onclick="event.preventDefault()"><span class="heateor_sss_svg" style="background-color:#ee8e2d;width:45px;height:45px;margin:0;display:inline-block!important;opacity:1;float:left;font-size:32px!important;box-shadow:none;display:inline-block;font-size:16px;padding:0 4px;vertical-align:middle;display:inline;background-repeat:repeat;overflow:hidden;padding:0;cursor:pointer;box-sizing:content-box;" onclick="heateorSssMoreSharingPopup(this, 'https://diright.ru', 'IT%20%D1%83%D1%81%D0%BB%D1%83%D0%B3%D0%B8%20%D0%B4%D0%BB%D1%8F%20%D0%B1%D0%B8%D0%B7%D0%BD%D0%B5%D1%81%D0%B0%20%7C%20%D0%94%D0%B8%D1%80%D0%B0%D0%B9%D1%82%20-%20%D0%9F%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5%20%D0%98%D0%A2%20%D1%80%D0%B5%D1%88%D0%B5%D0%BD%D0%B8%D1%8F', '' )"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="-.3 0 32 32" version="1.1" width="100%" height="100%" style="display:block;" xml:space="preserve"><g><path fill="#fff" d="M18 14V8h-4v6H8v4h6v6h4v-6h6v-4h-6z" fill-rule="evenodd"></path></g></svg></span></a></div><div class="heateorSssClear"></div></div>
-</div>
-</div></div></div></div></div><div class="wrap mcb-wrap mcb-wrap-62ea6c32c one-second  column-margin-0px valign-middle clearfix" style="padding:3% 0;background-color:#0087e3"><div class="mcb-wrap-inner"><div class="column mcb-column mcb-item-b85b45b2a one column_column column-margin-0px"><div class="column_attr clearfix align_center" style=""><a href="../it-blog.html"><img width="764" height="396" class="scale-with-grid" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20764%20396'%3E%3C/svg%3E" alt="ИТ Блог" data-lazy-src="/wp-content/uploads/blog.png"><noscript><img width="764" height="396" class="scale-with-grid" src="../wp-content/uploads/blog.png" alt="ИТ Блог"></noscript></a>
-</div></div></div></div></div></div><div class="section mcb-section mcb-section-bm325lcsz" style="padding-top:70px"><div class="section_wrapper mcb-section-inner"><div class="wrap mcb-wrap mcb-wrap-riqmx31ty one  valign-top clearfix" style="padding:0 3% 0 0"><div class="mcb-wrap-inner"><div class="column mcb-column mcb-item-7zfo3251w one column_column"><div class="column_attr clearfix" style=""><p style="font-size:170%; font-weight:700;">Правильные ИТ решения</p>
-<hr style="height:1px; background-color:#626262;">
-<p style="font-size:150%; font-weight:500;">Профессиональный и надежный IT сервис провайдер!</p>
-<p>Предлагаем высокоэффективные автоматизированные системы, проектируем, внедряем и сопровождаем мультисервисные проекты для компаний. Комплексные услуги в области информационной и инженерной инфраструктуры предприятия.</p>
-<p>Внедрение инновационных решений позволит выйти на новый уровень и добиться большего расположения со стороны ваших клиентов. Цены на услуги специалистов зависят от масштабов предприятия-заказчика, а также преследуемых интересов.</p>
-<p>После полного внедрения современных технологий все системы будут работать без перебоев, принося доход компании.</p>
-<p>Сложно представить коммерческую деятельность без использования информационных технологий, которые формируют необходимый имидж организации. Деловым партнерам приятней работать с людьми, которые идут в ногу со временем, а поставщик и потребитель смогут оценить уровень компании, ее успех.
-</p>
-
-<p>Использование современных технологий позволяет предприятию быстро развиваться в технологическом плане. Предлагаемые услуги доступны не только в Москве – получить профессиональный сервис и качественные услуги вы можете по всей России! Гарантируем одинаково высокое качество работы независимо от размеров обслуживаемых предприятий и уникальности запросов.</p>
-</div></div><div class="column mcb-column mcb-item-f69gef5ho one-second column_column"><div class="column_attr clearfix" style=""><p style="font-size:150%; font-weight:500;">ИТ-Аутсорсинг для юридических лиц</p>
-<br><p>Абонентское обслуживание компьютеров от «Дирайт» — симбиоз профессиональных услуг и решений. </p>
-	<p>Сократим текущие затраты на услуги и сервисы. Комплексное внедрение ИТ-решений позволит наладить процессы и повысить эффективность работы компании.</p>
-<p>Оптимизируем процессы и распределим ресурсы с помощью проверенных ИТ-решений, инфраструктуры и стратегии, с учетом эффективности эксплуатации ресурсов.</p>
-
-<p>Стремимся к тому, чтобы заказчики всегда получали качественный сервис и активно применяли самые передовые технологии, позволяющие добиваться конкурентного преимущества.</p>
-<p>Основная проблема современного бизнеса — хаотичная архитектура информационных систем. Количество используемых программных приложений, аппаратных средств, программно-аппаратных и других узлов по мере развития постоянно растет. Автоматизированная информационная система превращается в огромный спутанный клубок без четкой структуры, а данные многократно дублируются. У нас есть IT-решение!</p>
-
-</div></div><div class="column mcb-column mcb-item-833fzhzxi one-second column_column column-margin-10px"><div class="column_attr clearfix" style="padding:0px;"><p style="font-size:150%; font-weight:500;">Помогаем клиентам извлечь максимальную выгоду от цифровых технологий</p>
-<p>Мы систематизировали все свои знания и опыт реализации сотен проектов, что позволяет предоставлять качественный сервис, а не средства и методы.</p><br>
-<div style="display:block; min-height:60px;"><div class="icon-spr-resheniya" style="float:left; margin-left:15px;"></div><div style="margin-left:100px;">Предоставляем услуги и сервисы, удовлетворяющие поставленным задачам и целям.</div></div>
-<div style="display:block; min-height:60px;"><div class="icon-spr-optimizatsiya" style="float:left; margin-left:15px;"></div><div style="margin-left:100px;">Оптимизируем инфраструктуру и затраты на IT.</div></div>
-<div style="display:block; min-height:60px;"><div class="icon-spr-individualno" style="float:left; margin-left:15px;"></div><div style="margin-left:100px;">Решаем поставленные задачи с учетом индивидуальных нюансов Вашего бизнеса.</div></div>
-<div style="display:block; min-height:60px;"><div class="icon-spr-standarty" style="float:left; margin-left:15px;"></div><div style="margin-left:100px;">Решения базируются на современных технологиях и стандартах управления ИТ-сервисами.</div></div>
-<div style="display:block; min-height:60px;"><div class="icon-spr-masshtabirovanie" style="float:left; margin-left:15px;"></div><div style="margin-left:100px;">Решения готовы к масштабированию и будущему росту.</div></div>
-<div style="display:block; min-height:60px;"><div class="icon-spr-spetsializatsiya" style="float:left; margin-left:15px;"></div><div style="margin-left:100px;">Специализируемся на создании и сопровождении ИТ-инфраструктуры бизнеса.</div></div>
-</div></div></div></div></div></div><div class="section the_content no_content"><div class="section_wrapper"><div class="the_content_wrapper "></div></div></div>
-				<div class="section section-page-footer">
-					<div class="section_wrapper clearfix">
-
-						<div class="column one page-pager">
-													</div>
-
-					</div>
-				</div>
-
+				<!-- TemplateBeginEditable name="content" -->
+				<!-- TemplateEndEditable -->
 			</div>
-
-			
 		</div>
-
-		
 	</div>
 </div>
 
-
-<!-- mfn_hook_content_after --><!-- mfn_hook_content_after -->
 
 	<footer id="Footer" class="clearfix">
 
