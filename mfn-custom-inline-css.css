@@ -1,0 +1,22 @@
+#Top_bar .menu > li > ul.mfn-megamenu a.mfn-megamenu-title:hover { background:rgba(0,0,0,0.06); }
+
+@media only screen and (max-width: 767px) {
+    #Top_bar a.responsive-menu-toggle { top:36px; }
+}
+
+/* Lists */
+.list_item .list_right .desc { color: #adaeb3; }
+
+/* Testimonials */
+blockquote { background: none; font-size:130%; margin: 0; top: 0; font-style: italic; }
+#home_testimonials .testimonials_slider.single-photo .testimonials_slider_ul li .bq_wrapper { margin: 0; }
+#home_testimonials .testimonials_slider.single-photo .hr_dots { display: none; }
+
+/* Pricing */
+.pricing-box { box-shadow: 0 4px 10px 5px rgba(0, 0, 0, 0.08); }
+.pricing-box .plan-header .image { padding: 30px 0; }
+.pricing-box .plan-inside { min-height: 105px; padding: 30px;  }
+
+/* Footer */
+#Footer .footer_copy { background: #21293f url(../wp-content/uploads/home_software_footer_bg.png) repeat-x left bottom; border: 0; }
+#Footer .footer_copy .one { margin-bottom: 30px; }
