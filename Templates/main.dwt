@@ -77,24 +77,19 @@
 
 			<div class="top_bar_left clearfix">
 
-				<div class="logo"><a id="logo" href="../index.htm" title="PVL GRUPP" data-height="64" data-padding="13"><img width="224" height="64" class="logo-main scale-with-grid" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20224%2064'%3E%3C/svg%3E" data-retina="../wp-content/uploads/retina-logo.png" data-="" alt="Дирайт / Diright" data-no-retina="" data-lazy-src="../wp-content/uploads/logo.png"><noscript><img width="224" height="64" class="logo-main scale-with-grid" src="../wp-content/uploads/logo.png" data-retina="../wp-content/uploads/retina-logo.png" data-="" alt="Дирайт / Diright" data-no-retina=""></noscript><img width="50" height="50" class="logo-sticky scale-with-grid" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2050%2050'%3E%3C/svg%3E" data-retina="../wp-content/uploads/retina-logo-stik.png" data-="" alt="Дирайт / Diright" data-no-retina="" data-lazy-src="../wp-content/uploads/logo-stik.png"><noscript><img width="50" height="50" class="logo-sticky scale-with-grid" src="../wp-content/uploads/logo-stik.png" data-retina="../wp-content/uploads/retina-logo-stik.png" data-="" alt="Дирайт / Diright" data-no-retina=""></noscript><img width="224" height="64" class="logo-mobile scale-with-grid" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20224%2064'%3E%3C/svg%3E" data-retina="../wp-content/uploads/retina-logo.png" data-="" alt="Дирайт / Diright" data-no-retina="" data-lazy-src="../wp-content/uploads/logo.png"><noscript><img width="224" height="64" class="logo-mobile scale-with-grid" src="../wp-content/uploads/logo.png" data-retina="../wp-content/uploads/retina-logo.png" data-="" alt="Дирайт / Diright" data-no-retina=""></noscript><img width="224" height="64" class="logo-mobile-sticky scale-with-grid" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20224%2064'%3E%3C/svg%3E" data-retina="../wp-content/uploads/retina-logo.png" data-="" alt="Дирайт / Diright" data-no-retina="" data-lazy-src="../wp-content/uploads/logo.png"><noscript><img width="224" height="64" class="logo-mobile-sticky scale-with-grid" src="../wp-content/uploads/logo.png" data-retina="../wp-content/uploads/retina-logo.png" data-="" alt="Дирайт / Diright" data-no-retina=""></noscript></a></div>
+				<div class="logo"><a id="logo" href="index.htm" title="PVL GRUPP" data-height="64" data-padding="13"><img width="224" height="64" class="logo-main scale-with-grid" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20224%2064'%3E%3C/svg%3E" data-retina="../wp-content/uploads/retina-logo.png" data-="" alt="Дирайт / Diright" data-no-retina="" data-lazy-src="../wp-content/uploads/logo.png"><noscript><img width="224" height="64" class="logo-main scale-with-grid" src="wp-content/uploads/logo.png" data-retina="../wp-content/uploads/retina-logo.png" data-="" alt="Дирайт / Diright" data-no-retina=""></noscript><img width="50" height="50" class="logo-sticky scale-with-grid" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2050%2050'%3E%3C/svg%3E" data-retina="../wp-content/uploads/retina-logo-stik.png" data-="" alt="Дирайт / Diright" data-no-retina="" data-lazy-src="../wp-content/uploads/logo-stik.png"><noscript><img width="50" height="50" class="logo-sticky scale-with-grid" src="wp-content/uploads/logo-stik.png" data-retina="../wp-content/uploads/retina-logo-stik.png" data-="" alt="Дирайт / Diright" data-no-retina=""></noscript><img width="224" height="64" class="logo-mobile scale-with-grid" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20224%2064'%3E%3C/svg%3E" data-retina="../wp-content/uploads/retina-logo.png" data-="" alt="Дирайт / Diright" data-no-retina="" data-lazy-src="../wp-content/uploads/logo.png"><noscript><img width="224" height="64" class="logo-mobile scale-with-grid" src="wp-content/uploads/logo.png" data-retina="../wp-content/uploads/retina-logo.png" data-="" alt="Дирайт / Diright" data-no-retina=""></noscript><img width="224" height="64" class="logo-mobile-sticky scale-with-grid" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20224%2064'%3E%3C/svg%3E" data-retina="../wp-content/uploads/retina-logo.png" data-="" alt="Дирайт / Diright" data-no-retina="" data-lazy-src="../wp-content/uploads/logo.png"><noscript><img width="224" height="64" class="logo-mobile-sticky scale-with-grid" src="wp-content/uploads/logo.png" data-retina="../wp-content/uploads/retina-logo.png" data-="" alt="Дирайт / Diright" data-no-retina=""></noscript></a></div>
+				<div style="position:absolute; left:120px; top:10px; border: solid 0px red; z-index: 9999;">
+					<div class="menu-item menu-item-type-post_type menu-item-object-page mfn-megamenu-cols-8"><a class="mfn-megamenu-title" href="#">EST</a></div>
+					<div class="menu-item menu-item-type-post_type menu-item-object-page mfn-megamenu-cols-8"><a class="mfn-megamenu-title" href="#">RUS</a></div>
+					<div class="menu-item menu-item-type-post_type menu-item-object-page mfn-megamenu-cols-8"><a class="mfn-megamenu-title" href="#">ENG</a></div>
+				</div>
 				<div class="menu_wrapper">
 					<nav id="menu">
 						<ul id="menu-main-menu" class="menu menu-main">
-							<li id="menu-item-161" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="../o-nas/index.htm"><span>О НАС</span></a></li>
-							<li id="menu-item-495" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children"><a href="../it-uslugi/index.htm"><span>ИТ-УСЛУГИ</span></a>
-								<ul class="sub-menu mfn-megamenu mfn-megamenu-8">
-									<li id="menu-item-258" class="menu-item menu-item-type-post_type menu-item-object-page mfn-megamenu-cols-8"><a class="mfn-megamenu-title" href="../it-uslugi/sozdanie-saytov/index.htm"><span>Создание сайтов</span></a></li>
-									<li id="menu-item-1042" class="menu-item menu-item-type-post_type menu-item-object-page mfn-megamenu-cols-8"><a class="mfn-megamenu-title" href="../it-uslugi/podderzhka-i-obsluzhivanie-saytov/index.htm"><span>Поддержка сайтов</span></a></li>
-									<li id="menu-item-261" class="menu-item menu-item-type-post_type menu-item-object-page mfn-megamenu-cols-8"><a class="mfn-megamenu-title" href="../it-uslugi/seo-prodvizhenie-saytov/index.htm"><span>SEO Продвижение</span></a></li>
-									<li id="menu-item-246" class="menu-item menu-item-type-post_type menu-item-object-page mfn-megamenu-cols-8"><a class="mfn-megamenu-title" href="../it-uslugi/obsluzhivanie-kompyuterov/index.htm"><span>ИТ Аутсорсинг</span></a></li>
-									<li id="menu-item-267" class="menu-item menu-item-type-post_type menu-item-object-page mfn-megamenu-cols-8"><a class="mfn-megamenu-title" href="../it-uslugi/it-audit/index.htm"><span>ИТ Аудит</span></a></li>
-									<li id="menu-item-264" class="menu-item menu-item-type-post_type menu-item-object-page mfn-megamenu-cols-8"><a class="mfn-megamenu-title" href="../it-uslugi/it-konsalting/index.htm"><span>ИТ Консалтинг</span></a></li>
-									<li id="menu-item-277" class="menu-item menu-item-type-post_type menu-item-object-page mfn-megamenu-cols-8"><a class="mfn-megamenu-title" href="../it-uslugi/razrabotka-programmnogo-obespecheniya/index.htm"><span>Разработка ПО</span></a></li>
-									<li id="menu-item-1372" class="menu-item menu-item-type-post_type menu-item-object-page mfn-megamenu-cols-8"><a class="mfn-megamenu-title" href="../it-uslugi/index.htm"><span>ВСЕ IT-УСЛУГИ</span></a></li>
-								</ul>
-							</li>
-							<li id="menu-item-101" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="../kontakty/index.htm"><span>КОНТАКТЫ</span></a></li>
+<li id="menu-item-161" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="../o-nas/index.htm"><span>О НАС</span></a></li>
+<li id="menu-item-495" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children"><a href="../it-uslugi/index.htm"><span>ИТ-УСЛУГИ</span></a></li>
+<li id="menu-item-101" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="../kontakty/index.htm"><span>КОНТАКТЫ</span></a></li>
+<li id="menu-item-102" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="?"><span>ЦЕНЫ</span></a></li>
 						</ul>
 					</nav>
 					<a class="responsive-menu-toggle " href="#"><i class="icon-menu-fine"></i></a>
@@ -121,7 +116,7 @@
 
 			<div class="top_bar_right">
 				<div class="top_bar_right_wrapper">
-					<div class="menu_phone"><a href="tel:+74996867888">+7 (499) 686-78-88</a></div>
+					<div class="menu_phone"><a href="tel:+74996867888">+372 56 642 130</a></div>
 					<!--<a id="search_button" href="#"><i class="icon-search-fine"></i></a>-->
 				</div>
 			</div>
@@ -157,56 +152,37 @@
 	<footer id="Footer" class="clearfix">
 
 		
-		<div class="widgets_wrapper"><div class="container"><div class="column one-third"><aside id="text-2" class="widget widget_text">			<div class="textwidget"><img width="200" height="51" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20200%2051'%3E%3C/svg%3E" alt="Дирайт" data-lazy-src="/wp-content/uploads/dr-logo.png"><noscript><img width="200" height="51" src="../wp-content/uploads/dr-logo.png" alt="Дирайт"></noscript>
-<p style="font-size:120%; font-weight:500;">Правильные IT решения!</p>
+		<div class="widgets_wrapper"><div class="container"><div class="column one-third"><aside id="text-2" class="widget widget_text">			<div class="textwidget"><img width="200" height="51" src="/wp-content/uploads/dr-logo.png"><noscript><img width="200" height="51" src="../wp-content/uploads/dr-logo.png" alt="Дирайт"></noscript>
+<p style="font-size:120%; font-weight:500;">Делаем свою работу-<br>
+	Что бы Вы могли делать свою!</p>
+			<!--
 <p><a href="../it-uslugi/index.htm">IT-услуги</a> для малого и среднего бизнеса.
 Комплексные решения  по построению и обслуживанию IT-инфраструктуры предприятия</p>
-
+-->
 </div>
 		</aside></div><div class="column one-third"><aside id="text-3" class="widget widget_text">			<div class="textwidget"><p style="font-size:150%; font-weight:500;  color:#ffffff;">Связаться с нами</p><br>
-<a href="tel:+74996867888"><span style="font-size:160%; font-weight:700; color:#ffffff; padding-bottom:10px;">+7 (499) 686-78-88</span></a><br><br>
+<a href="tel:+74996867888"><span style="font-size:160%; font-weight:700; color:#ffffff; padding-bottom:10px;">+372 56 642 130</span></a><br><br>
 
 <a class="button b24-web-form-popup-btn-4 has-icon button_left button_size_3 button_stroke_custom" href="#e" style="border-color:#1274bb!important;color:#1274bb;"><span class="button_icon"><i class="icon-email" style="color:#1274bb!important;"></i></span><span class="button_label">Написать нам</span></a>
 
 
 </div>
-		</aside></div><div class="column one-third"><aside id="text-5" class="widget widget_text">			<div class="textwidget"><p class="" style="font-size:150%; font-weight:500;  color:#ffffff;">ИТ-Решения</p>
-<ul>
+		</aside></div><div class="column one-third"><aside id="text-5" class="widget widget_text">			<div class="textwidget">
 
-<li style="line-height:2;"><a href="../it-uslugi/sozdanie-saytov/index.htm">Создание сайтов</a></li>
-<li style="line-height:2;"><a href="../it-uslugi/seo-prodvizhenie-saytov/index.htm">Продвижение сайтов</a></li>
-<li style="line-height:2;"><a href="../it-uslugi/podderzhka-i-obsluzhivanie-saytov/index.htm">Обслуживание сайтов</a></li>
-<li style="line-height:2;"><a href="../it-uslugi/obsluzhivanie-kompyuterov/index.htm">ИТ-Аутсорсинг</a></li>
-<li style="line-height:2;"><a href="../it-uslugi/it-audit/index.htm">ИТ-Аудит</a></li>
-<li style="line-height:2;"><a href="../it-uslugi/it-konsalting/index.htm">ИТ-Консалтинг</a></li>
-</ul>
+			PVL GRUPP OÜ<br>
+			REG NR.: 11034545<br>
+			KMKR: EE100902655<br>
+			A/a: EE731010220085113012; SEB PANK<br>
 
 </div>
 		</aside></div></div></div>
 		
 			<div class="footer_copy">
 				<div class="container">
-					<div class="column one">
-
-						<a id="back_to_top" class="button button_js" href=""><i class="icon-up-open-big"></i></a>
-						<div class="copyright">
-							<a href="../zayavlenie-o-konfidentsialnosti/index.htm" rel="nofollow">Конфиденциальность</a> -
-							<a href="../usloviya-ispolzovaniya-web-sayta/index.htm" rel="nofollow">Условия использования</a>
-							<br>Москва &copy; 2011-2023 ИТ-компания "ДиРайт"
-							<div style="padding-top:5px;">
-							</div>
-
-						</div>
-
-						<ul class="social">
-							<li class="facebook"><a target="_blank" rel="nofollow" href="https://www.facebook.com/Diright" title="Facebook"><i class="icon-facebook"></i></a></li><li class="twitter"><a target="_blank" rel="nofollow" href="https://twitter.com/infodiright" title="Twitter"><i class="icon-twitter"></i></a></li>
-							<li class="vkontakte"><a target="_blank" rel="nofollow" href="https://vk.com/diright" title="VKontakte"><i class="icon-vkontakte"></i></a></li></ul>
+					<div class="column one" style="margin:0; padding:0; min-height:4px">
 					</div>
 				</div>
 			</div>
-
-		
-		
 	</footer>
 
 </div>

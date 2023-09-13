@@ -25,6 +25,9 @@
 						<resourceBases>
 							${project.basedir}
 						</resourceBases>
+						<_initParams>
+							<org.eclipse.jetty.servlet.Default.useFileMappedBuffer>false</org.eclipse.jetty.servlet.Default.useFileMappedBuffer>
+						</_initParams>
 					</webApp>
 				</configuration>
 			</plugin>
