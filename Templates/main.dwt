@@ -116,7 +116,7 @@
 
 			<div class="top_bar_right">
 				<div class="top_bar_right_wrapper">
-					<div class="menu_phone"><a href="tel:+74996867888">+372 56 642 130</a></div>
+					<div class="menu_phone"><a href="tel:+37256642130">+372 56 642 130</a></div>
 					<!--<a id="search_button" href="#"><i class="icon-search-fine"></i></a>-->
 				</div>
 			</div>
@@ -145,8 +145,8 @@
 
 		
 		<div class="widgets_wrapper"><div class="container"><div class="column one-third"><aside id="text-2" class="widget widget_text">			<div class="textwidget"><img width="200" height="51" src="/wp-content/uploads/dr-logo.png"><noscript><img width="200" height="51" src="../wp-content/uploads/dr-logo.png" alt="Дирайт"></noscript>
-<p style="font-size:120%; font-weight:500;">Делаем свою работу-<br>
-	Что бы Вы могли делать свою!</p>
+<p style="font-size:120%; font-weight:500;">Делаем свою работу,<br>
+	чтобы Вы могли делать свою!</p>
 			<!--
 <p><a href="../it-uslugi/index.htm">IT-услуги</a> для малого и среднего бизнеса.
 Комплексные решения  по построению и обслуживанию IT-инфраструктуры предприятия</p>
