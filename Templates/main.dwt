@@ -144,7 +144,9 @@
 	<footer id="Footer" class="clearfix">
 
 		
-		<div class="widgets_wrapper"><div class="container"><div class="column one-third"><aside id="text-2" class="widget widget_text">			<div class="textwidget"><img width="200" height="51" src="/wp-content/uploads/dr-logo.png"><noscript><img width="200" height="51" src="../wp-content/uploads/dr-logo.png" alt="Дирайт"></noscript>
+		<div class="widgets_wrapper"><div class="container"><div class="column one-third"><aside id="text-2" class="widget widget_text">
+			<div class="textwidget">
+				<p style="font-size:160%; font-weight:700; color:#ffffff; padding-bottom:10px;">PVL GRUPP</p>
 <p style="font-size:120%; font-weight:500;">Делаем свою работу,<br>
 	чтобы Вы могли делать свою!</p>
 			<!--
