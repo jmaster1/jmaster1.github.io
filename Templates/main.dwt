@@ -143,33 +143,39 @@
 
 	<footer id="Footer" class="clearfix">
 
-		
-		<div class="widgets_wrapper"><div class="container"><div class="column one-third"><aside id="text-2" class="widget widget_text">
-			<div class="textwidget">
-				<p style="font-size:160%; font-weight:700; color:#ffffff; padding-bottom:10px;">PVL GRUPP</p>
-<p style="font-size:120%; font-weight:500;">Делаем свою работу,<br>
-	чтобы Вы могли делать свою!</p>
-			<!--
-<p><a href="../it-uslugi/index.htm">IT-услуги</a> для малого и среднего бизнеса.
-Комплексные решения  по построению и обслуживанию IT-инфраструктуры предприятия</p>
--->
-</div>
-		</aside></div><div class="column one-third"><aside id="text-3" class="widget widget_text">			<div class="textwidget"><p style="font-size:150%; font-weight:500;  color:#ffffff;">Связаться с нами</p><br>
-<a href="tel:+74996867888"><span style="font-size:160%; font-weight:700; color:#ffffff; padding-bottom:10px;">+372 56 642 130</span></a><br><br>
-
-<a class="button b24-web-form-popup-btn-4 has-icon button_left button_size_3 button_stroke_custom" href="#e" style="border-color:#1274bb!important;color:#1274bb;"><span class="button_icon"><i class="icon-email" style="color:#1274bb!important;"></i></span><span class="button_label">Написать нам</span></a>
-
-
-</div>
-		</aside></div><div class="column one-third"><aside id="text-5" class="widget widget_text">			<div class="textwidget">
-
-			PVL GRUPP OÜ<br>
-			REG NR.: 11034545<br>
-			KMKR: EE100902655<br>
-			A/a: EE731010220085113012; SEB PANK<br>
-
-</div>
-		</aside></div></div></div>
+		<div class="widgets_wrapper">
+			<div class="container">
+				<div class="column one-third">
+					<aside id="text-2" class="widget widget_text">
+						<div class="textwidget">
+							<p style="font-size:160%; font-weight:700; color:#ffffff; padding-bottom:10px;">PVL GRUPP</p>
+							<p style="font-size:120%; font-weight:500;">Делаем свою работу,<br>чтобы Вы могли делать свою!</p>
+						</div>
+					</aside>
+				</div>
+				<div class="column one-third">
+					<aside id="text-3" class="widget widget_text">
+						<div class="textwidget">
+							<a href="tel:+37256642130"><span style="font-size:160%; font-weight:700; color:#ffffff; padding-bottom:1px;">+372 56 642 130</span></a><br><br>
+							<a class="button b24-web-form-popup-btn-4 has-icon button_left button_size_3 button_stroke_custom" href="#e" style="border-color:#1274bb!important;color:#1274bb;">
+								<span class="button_icon"><i class="icon-email" style="color:#1274bb!important;"></i></span>
+								<span class="button_label">Написать нам</span>
+							</a>
+						</div>
+					</aside>
+				</div>
+				<div class="column one-third">
+					<aside id="text-5" class="widget widget_text">
+						<div class="textwidget">
+							PVL GRUPP OÜ<br>
+							REG NR.: 11034545<br>
+							KMKR: EE100902655<br>
+							A/a: EE731010220085113012 SEB PANK<br>
+						</div>
+					</aside>
+				</div>
+			</div>
+		</div>
 		
 			<div class="footer_copy">
 				<div class="container">
