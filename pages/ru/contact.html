@@ -258,7 +258,7 @@
 
 <body class="home page-template-default page page-id-76 wp-schema-pro-2.7.1  color-custom style-simple button-stroke layout-full-width no-content-padding hide-love header-classic /*sticky-header*/ sticky-white ab-hide subheader-both-center menuo-right menuo-no-borders logo-valign-top logo-overflow mobile-tb-center mobile-mini-mr-ll be-reg-240">
 
-<div style="z-index: 9999;
+<div id="langLinks" style="z-index: 9999;
     position: absolute;
     left: 10px; top:10px">
     <div class="menu-item menu-item-type-post_type menu-item-object-page mfn-megamenu-cols-8">
@@ -268,6 +268,21 @@
     <div class="menu-item menu-item-type-post_type menu-item-object-page mfn-megamenu-cols-8">
         <a class="mfn-megamenu-title" href="#">ENG</a></div>
 </div>
+
+<script>
+    setInterval(function () {
+        document.querySelectorAll("#logo > img").forEach(img => {
+            let display = window.getComputedStyle(img, null).display;
+            if(display != "none") {
+                let rect = img.getBoundingClientRect();
+                let d = document.getElementById("langLinks");
+                d.style.position = "absolute";
+                d.style.left = rect.left + 'px';
+                d.style.top = (rect.top + 3) +'px';
+            }
+        });
+    }, 200);
+</script>
 
 <div id="Wrapper">
     <div id="Header_wrapper" class="">
