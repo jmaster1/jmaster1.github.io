@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="ceacdfb8-0912-4107-b32a-4c3f7befe8a8" name="ftp://pvl.ee" url="http://pvl.ee">
+        <!--
+          user:wwwadmin.pvl.ee
+          pass:ib3X9QwNbSg6
+        -->
+        <fileTransfer host="pvl.ee" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
