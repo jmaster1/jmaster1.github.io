@@ -1,24 +1,20 @@
 <?php
+// https://www.tutorialspoint.com/php/php_sending_emails.htm
 $to = "timur.kozlov@gmail.com"; // info@pvl.ee
-$subject = {$_POST['subject'];
+$subject = $_POST['subject'];
+$message = $_POST['message'];
+$header = "From:" . $_POST['email'] . "\r\n";
+$header .= "MIME-Version: 1.0\r\n";
+$header .= "Content-type: text/html\r\n";
 
-$message = "
-<html>
-<head>
-<title>This is a test HTML email</title>
-</head>
-<body>
-<p>Test email. Please ignore.</p>
-</body>
-</html>
-";
-
-// It is mandatory to set the content-type when sending HTML email
-$headers = "MIME-Version: 1.0" . "\r\n";
-$headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-
-// More headers. From is required, rest other headers are optional
-$headers .= 'From: <info@example.com>' . "\r\n";
-
-mail($to,$subject,$message,$headers);
+$retval = mail($to, $subject, $message, $header);
+echo " | to=" . $to;
+echo " | subject=" . $subject;
+echo " | message=" . $message;
+echo " | header=" . $header;
+if( $retval == true ) {
+    echo "Message sent successfully...";
+} else {
+    echo "Message could not be sent...";
+}
 ?>
