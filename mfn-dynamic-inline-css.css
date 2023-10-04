@@ -1,11 +1,9 @@
 body:not(.template-slider) #Header_wrapper {
-    background-image: url(../wp-content/uploads/diright-main.jpg);
     background-repeat: no-repeat;
     background-position: center top
 }
 
 #Subheader {
-    background-image: url(../wp-content/uploads/home_software_pattern.png);
     background-repeat: repeat;
     background-position: center
 }
