@@ -1,0 +1,125 @@
+/*
+Theme Name: Diright
+Theme URI: https://diright.ru/it-uslugi/sozdanie-saytov/
+Author: Diright
+Author URI: https://diright.ru/
+Description: Child Theme for Betheme
+Template: betheme
+Version: 1.6.2
+*/
+
+@import "sprite.css" all;
+@import "spritePtLogo.css" all;
+@import "spriteClLogo.css" all;
+
+.princip-header { font-size:150%; font-weight:bold; }
+.pricing-box .plan-header .price > span { font-size:30px; line-height:30px; }
+.pricing-box .plan-inside { text-align:left; }
+.celi .hr_dots { display:none; }
+.celi-header { color:#fb8819; }
+.celi .testimonials_slider .testimonials_slider_ul li .bq_wrapper { text-align:left; margin:0; padding:0 0 0 30px; }
+.get-disc .button_label { font-size:200%; font-weight:bold; padding:15px 30px !important; }
+.sale a.button { margin:7px !important; }
+.ask-cost .button_label { font-size:200%; font-weight:bold; padding:20px 60px !important; }
+
+.menu_phone {
+	font-size: 17px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	position: relative;
+	top: 5px;
+	display: block;
+	float: left;
+	margin-right: 25px;
+}
+
+#Top_bar .search_wrapper input[type="text"] { color:#383838; }
+
+.PricingTableH1 { font-size:35px; padding:20px 0; color:#fff; border-bottom:1px solid #d2d2d2; border-top:1px solid #fff; }
+.PricingTableH2 { font-size:38px; padding:35px 0; color:#fff; border:none; }
+.PricingTableCell div {
+	font-size: 19px;
+	padding: 12px 10px;
+	background-color: #f5f5f5; 
+	color: #666;
+	border-left: 1px solid #d2d2d2;
+	border-right: 1px solid #d2d2d2;
+	border-bottom: 1px solid #d2d2d2;
+	border-top: 1px solid #fff;
+}
+.PricingTableCell div:last-of-type { border-bottom:none; }
+.PricingTableBut { padding:20px; border:1px solid #d2d2d2; background-image:linear-gradient(to bottom, #ffffff, #e1e1e1); }
+.PTButtonPro a { display:block; background-color:#0086e3; border-radius:3px; padding:10px 0; color:#fff; font-size:22px; cursor:pointer; }
+.PTButtonPro a:hover { background-color:#0063c0; color:#fff; text-decoration:none;}
+.PTButtonBus a { display:block; background-color:#93c230; border-radius:3px; padding:10px 0; color:#fff; font-size:22px; cursor:pointer; }
+.PTButtonBus a:hover { background-color:#709f0d; color:#fff; text-decoration:none;}
+.PTButtonSta a { display:block; background-color:#00cdc1; border-radius:3px; padding:10px 0; color:#fff; font-size:22px; cursor:pointer; }
+.PTButtonSta a:hover { background-color:#00aa9e; color:#fff; text-decoration:none;}
+.PTButtonLan a { display:block; background-color:#0086E3; border-radius:3px; padding:10px 0; color:#fff; font-size:22px; cursor:pointer; }
+.PTButtonLan a:hover { background-color:#0063C0; color:#fff; text-decoration:none;}
+.PTButtonCom a { display:block; background-color:#B23DF2; border-radius:3px; padding:10px 0; color:#fff; font-size:22px; cursor:pointer; }
+.PTButtonCom a:hover { background-color:#8F1ACF; color:#fff; text-decoration:none;}
+
+.mfp-inline { width:568px; max-width:568px; }
+
+.vac-cheatlist .list_item .list_right { margin-left:0px; }
+.vac-cheatlist .list_item.lists_1 .list_left { margin-right:15px; }
+
+.logoset { height:260px; overflow:hidden; }
+.logosetitem { float:left; height:90px; margin:20px 36px; }
+.plogosetitem { float:left; height:90px; margin:20px 29px; }
+
+.heateor_sss_vertical_sharing { position:relative; top: 0 !important; width:auto !important; }
+ul.heateor_sss_sharing_ul li { margin:0 5px 5px 0 !important; }
+
+.h3 { font-size:25px; line-height:29px; font-weight:300; letter-spacing:0px; }
+.h4 { font-size:21px; line-height:25px; font-weight:500; letter-spacing:0px; }
+#Footer .h4, #Footer .h3, #Footer .h3 a { color:#ffffff; text-decoration:none; margin-bottom:15px; }
+
+.main-slider { padding:57px 0 57px 0; }
+.slider-lay1 { color:#eeeeee; font-size:24px; line-height:58px; font-weight:600; }
+.slider-img { float:left; padding:0 60px 57px 0; }
+
+.tarif-comp-it-out { font-size:120%; }
+
+body:not(.page-id-97):not(.page-id-208) .grecaptcha-badge {
+	display: none;
+}
+
+@media only screen and (max-width: 480px) {
+	.friends { margin-left:20%; }
+	.h3 { font-size:15px; line-height:19px; letter-spacing:0px; }
+	.answer { padding:0 !important; }
+	.tarif-comp-it-out { font-size:90%; }
+	.tarif-comp-it-out > tbody > tr > td { padding:10px 5px; }
+}
+
+@media only screen and (max-width: 767px) {
+	.section_wrapper,
+	.container,
+	.four.columns .widget-area { padding-left:20px !important; padding-right:20px !important; }
+	.h3 { font-size:19px; line-height:22px; letter-spacing:0px; }
+	.h4 { font-size:16px; line-height:19px; letter-spacing:0px; }
+	.main-slider { padding:27px 0 49px 0; text-align:center; }
+	.slider-lay1 { font-size:32px; line-height:35px; padding-bottom:24px; }
+	.slider-lay2 { font-size:20px; padding:7px 20px; }
+	.slider-img { position:inherit; top:0; }
+	.slider-img img { width:400px; }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	.h3 { font-size:21px; line-height:25px; letter-spacing:0px; }
+	.h4 { font-size:18px; line-height:21px; letter-spacing:0px; }
+	.main-slider { padding:37px 0 59px 0; }
+	.slider-lay1 { font-size:35px; line-height:35px; padding-bottom:53px; }
+	.slider-lay2 { font-size:20px; }
+	.slider-img img { width:400px; }
+}
+
+@media only screen and (min-width: 960px) and (max-width: 1239px) {
+	.pricing-box .plan-header .price > span { font-size:24px; }
+	.main-slider { padding:47px 0 69px 0; }
+	.slider-lay1 { font-size:47px; line-height:45px; }
+	.slider-img { top:55px; }
+	.slider-img img { width:550px; }
+}
