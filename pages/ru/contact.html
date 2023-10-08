@@ -659,6 +659,15 @@ for (var i=0;i<pseudo_links.length;i++ ) { pseudo_links[i].addEventListener("cli
 <script type="rocketlazyloadscript" data-rocket-type='text/javascript' id='mfn-scripts-js-after'>
 jQuery(function($){
 	$(document).ready(function(){
+
+	    $("form#contactForm").submit(function(e) {
+            e.preventDefault();
+            var formData = new FormData(this);
+            $.post($(this).attr("action"), formData, function(data) {
+                alert(data);
+            });
+        });
+
 		$(".logoall").click(function(){
 			if($(".logoall > .button_label").text() == "Показать всеx"){
 				var lsetw = $("#lset").width();
