@@ -240,6 +240,15 @@
 </div>
 
 <script>
+	function setLangLinkHref(id, lang) {
+        let link = document.getElementById(id);
+        var match = window.location.href.match('/pages/(.*)/(.*)');
+        link.setAttribute("href", '/pages/'+ lang + '/' + match[2]);
+    }
+    setLangLinkHref('langLink_et', 'et');
+    setLangLinkHref('langLink_ru', 'ru');
+    setLangLinkHref('langLink_en', 'en');
+	
     setInterval(function () {
         document.querySelectorAll("#logo > img").forEach(img => {
             let display = window.getComputedStyle(img, null).display;
