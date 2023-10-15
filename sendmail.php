@@ -40,7 +40,7 @@ function mail_attachment ($from , $to, $subject, $message, $attachmentFile, $att
     }
 }
 echo "<pre>";
-$to = "timur.kozlov@gmail.com"; // info@pvl.ee
+$to = "info@pvl.ee";
 $from = $_REQUEST['email'];
 $name = $_REQUEST['name'];
 $phone = $_REQUEST['phone'];

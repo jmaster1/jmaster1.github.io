@@ -384,12 +384,12 @@
                             <div id="formOverlay" style="position: absolute; z-index: 9999; top: 20px; left: 30px; visibility: hidden">
                                 <div style="vertical-align: center; text-align: center; width: 100%; height: 100%">
                                     <br><br><br>
-                                    <span id="messageSent">
+                                    <span id="messageSent" style="visibility: hidden">
                                         <h2>Спасибо!</h2>
                                         <h2>Ваше сообщение отослано!</h2>
                                     </span>
                                     <!--https://cssloaders.github.io/-->
-                                    <span id="messageSpinner" class="loader"></span>
+                                    <span id="spinner" class="loader"></span>
                                 </div>
                             </div>
                             <script>
@@ -407,18 +407,16 @@
                                       class="wpcf7-form init" aria-label="Контактная форма"
                                       enctype="multipart/form-data" novalidate="novalidate"
                                       data-status="init"
-                                        style="visibility: visible">
-
+                                      style="visibility: visible">
                             <div class="column one-third">
-                              <p><span class="wpcf7-form-control-wrap"
-                                                 data-name="name">
+                              <p><span class="wpcf7-form-control-wrap" data-name="name">
                                 <input size="40"
                                                                               class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
                                                                               aria-required="true"
                                                                               aria-invalid="false"
                                                                               placeholder="Ваше имя *"
                                                                               value="" type="text"
-                                                                              name="name">
+                                                                              name="name" id="name">
                                 </span> </p>
                             </div>
 							  
@@ -431,7 +429,7 @@
                                                                                aria-invalid="false"
                                                                                placeholder="Ваш e-mail *"
                                                                                value="" type="email"
-                                                                               name="email">
+                                                                               name="email" id="email">
                                 </span> </p>
                             </div>
 							  <div class="column one-third">
@@ -443,7 +441,7 @@
                                                                                aria-invalid="false"
                                                                                placeholder="Ваш телефон"
                                                                                value="" type="text"
-                                                                               name="phone">
+                                                                               name="phone" id="phone">
                                 </span> </p>
                             </div>
                             <div class="column one">
@@ -454,7 +452,7 @@
                                                                                  aria-invalid="false"
                                                                                  placeholder="Тема сообщения"
                                                                                  type="text"
-                                                                                 name="subject">
+                                                                                 name="subject" id="subject">
                                 </span> </p>
                             </div>
                             <div class="column one">
@@ -465,7 +463,7 @@
                                                                                     class="wpcf7-form-control wpcf7-textarea"
                                                                                     aria-invalid="false"
                                                                                     placeholder="Сообщение"
-                                                                                    name="message"></textarea>
+                                                                                    name="message" id="message"></textarea>
                                 </span> </p>
                             </div>
 
@@ -511,16 +509,23 @@
 
         var files = fileSelect.files;
         var formData = new FormData();
+        formData.append("name", document.getElementById('name').value);
+        formData.append("email", document.getElementById('email').value);
+        formData.append("phone", document.getElementById('phone').value);
+        formData.append("subject", document.getElementById('subject').value);
+        formData.append("message", document.getElementById('message').value);
         if(files.length > 0) {
-            var file = files[0];
+            let file = files[0];
             formData.append('file', file, file.name);
         }
-        var xhr = new XMLHttpRequest();
+        document.getElementById("contactForm").style.visibility = "hidden";
+        document.getElementById("formOverlay").style.visibility = "visible";
+                var xhr = new XMLHttpRequest();
         xhr.open('POST', 'https://pvl.ee/sendmail.php', true);
-        xhr.upload.onprogress = function (e) {
-            console.log("progress=" + e);
-        }
+
         xhr.onload = function (e) {
+            document.getElementById("messageSent").style.visibility = "visible";
+            document.getElementById("spinner").style.visibility = "hidden";
             console.log("onload=" + e);
             if (xhr.status === 200) {
 
