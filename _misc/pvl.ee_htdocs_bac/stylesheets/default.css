@@ -1,0 +1,76 @@
+/* CSS Document */
+
+/***********************************************/
+/* HTML tag styles                             */
+/***********************************************/ 
+body, a, p, div, pre, input, select, td {
+	font: normal 12px Arial;
+	line-height: 150%;
+}
+body {
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+}
+/***********************************************/
+/* Menu styles                                  */
+/***********************************************/ 
+.menuContainer, .menuContainerSelected {
+	padding: 2px 0px 2px 0px;
+	text-align: center;
+	background-color: #DEE1CD;
+}
+.menuContainerSelected {
+	background-color: #e2e2e2;
+}
+.menuLink {
+	white-space: nowrap;
+	border: none;
+	padding: 0px 8px 0px 8px;
+	display: block;
+	font: bold 12px Tahoma;
+	text-decoration: none;
+	color: #000000;
+}
+.menuLink:hover {
+	border: none;
+	padding: 0px 8px 0px 8px;
+	text-decoration: none;
+	color: #000000;
+}
+
+.subMenuIconContainer {
+	padding: 7px 7px 7px 0px;
+	vertical-align: middle;
+}
+.subMenuContainer, .subMenuContainerSelected {
+	padding: 2px 5px 2px 5px;
+	text-align: left;
+	background-color: #DEE1CD;
+}
+.subMenuContainerSelected {
+	background-color: #e2e2e2;
+}
+.subMenuLink {
+	white-space: nowrap;
+	border: none;
+	display: block;
+	font: bold 12px Tahoma;
+	text-decoration: none;
+	color: #000000;
+}
+.content {
+	background-color: #e2e2e2;
+	padding: 1px 7px 7px 7px;
+	vertical-align: top;
+}
+.footer {
+	background-color: #e2e2e2;
+	text-align: center;
+	font: bold 12px Arial;
+	color: #000000;
+	padding: 2px 2px 2px 2px;
+}
+.clipart {
+	padding: 2px 2px 2px 2px;
+	border: 1px solid;
+}
