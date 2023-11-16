@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="ru-RU" class="no-js" itemscope="" itemtype="https://schema.org/WebPage"><!-- InstanceBegin template="/Templates/main_en.dwt" codeOutsideHTMLIsLocked="false" -->
+
+<head>
+    <meta charset="UTF-8">
+    <script>class RocketLazyLoadScripts {
+        constructor(e) {
+            this.triggerEvents = e, this.eventOptions = {passive: !0}, this.userEventListener = this.triggerListener.bind(this), this.delayedScripts = {
+                normal: [],
+                async: [],
+                defer: []
+            }, this.allJQueries = []
+        }
+
+        _addUserInteractionListener(e) {
+            this.triggerEvents.forEach((t => window.addEventListener(t, e.userEventListener, e.eventOptions)))
+        }
+
+        _removeUserInteractionListener(e) {
+            this.triggerEvents.forEach((t => window.removeEventListener(t, e.userEventListener, e.eventOptions)))
+        }
+
+        triggerListener() {
+            this._removeUserInteractionListener(this), "loading" === document.readyState ? document.addEventListener("DOMContentLoaded", this._loadEverythingNow.bind(this)) : this._loadEverythingNow()
+        }
+
+        async _loadEverythingNow() {
+            this._delayEventListeners(), this._delayJQueryReady(this), this._handleDocumentWrite(), this._registerAllDelayedScripts(), this._preloadAllScripts(), await this._loadScriptsFromList(this.delayedScripts.normal), await this._loadScriptsFromList(this.delayedScripts.defer), await this._loadScriptsFromList(this.delayedScripts.async), await this._triggerDOMContentLoaded(), await this._triggerWindowLoad(), window.dispatchEvent(new Event("rocket-allScriptsLoaded"))
+        }
+
+        _registerAllDelayedScripts() {
+            document.querySelectorAll("script[type=rocketlazyloadscript]").forEach((e => {
+                e.hasAttribute("src") ? e.hasAttribute("async") && !1 !== e.async ? this.delayedScripts.async.push(e) : e.hasAttribute("defer") && !1 !== e.defer || "module" === e.getAttribute("data-rocket-type") ? this.delayedScripts.defer.push(e) : this.delayedScripts.normal.push(e) : this.delayedScripts.normal.push(e)
+            }))
+        }
+
+        async _transformScript(e) {
+            return await this._requestAnimFrame(), new Promise((t => {
+                const n = document.createElement("script");
+                let r;
+                [...e.attributes].forEach((e => {
+                    let t = e.nodeName;
+                    "type" !== t && ("data-rocket-type" === t && (t = "type", r = e.nodeValue), n.setAttribute(t, e.nodeValue))
+                })), e.hasAttribute("src") ? (n.addEventListener("load", t), n.addEventListener("error", t)) : (n.text = e.text, t()), e.parentNode.replaceChild(n, e)
+            }))
+        }
+
+        async _loadScriptsFromList(e) {
+            const t = e.shift();
+            return t ? (await this._transformScript(t), this._loadScriptsFromList(e)) : Promise.resolve()
+        }
+
+        _preloadAllScripts() {
+            var e = document.createDocumentFragment();
+            [...this.delayedScripts.normal, ...this.delayedScripts.defer, ...this.delayedScripts.async].forEach((t => {
+                const n = t.getAttribute("src");
+                if (n) {
+                    const t = document.createElement("link");
+                    t.href = n, t.rel = "preload", t.as = "script", e.appendChild(t)
+                }
+            })), document.head.appendChild(e)
+        }
+
+        _delayEventListeners() {
+            let e = {};
+
+            function t(t, n) {
+                !function (t) {
+                    function n(n) {
+                        return e[t].eventsToRewrite.indexOf(n) >= 0 ? "rocket-" + n : n
+                    }
+
+                    e[t] || (e[t] = {
+                        originalFunctions: {add: t.addEventListener, remove: t.removeEventListener},
+                        eventsToRewrite: []
+                    }, t.addEventListener = function () {
+                        arguments[0] = n(arguments[0]), e[t].originalFunctions.add.apply(t, arguments)
+                    }, t.removeEventListener = function () {
+                        arguments[0] = n(arguments[0]), e[t].originalFunctions.remove.apply(t, arguments)
+                    })
+                }(t), e[t].eventsToRewrite.push(n)
+            }
+
+            function n(e, t) {
+                let n = e[t];
+                Object.defineProperty(e, t, {
+                    get: () => n || function () {
+                    }, set(r) {
+                        e["rocket" + t] = n = r
+                    }
+                })
+            }
+
+            t(document, "DOMContentLoaded"), t(window, "DOMContentLoaded"), t(window, "load"), t(window, "pageshow"), t(document, "readystatechange"), n(document, "onreadystatechange"), n(window, "onload"), n(window, "onpageshow")
+        }
+
+        _delayJQueryReady(e) {
+            let t = window.jQuery;
+            Object.defineProperty(window, "jQuery", {
+                get: () => t, set(n) {
+                    if (n && n.fn && !e.allJQueries.includes(n)) {
+                        n.fn.ready = n.fn.init.prototype.ready = function (t) {
+                            e.domReadyFired ? t.bind(document)(n) : document.addEventListener("rocket-DOMContentLoaded", (() => t.bind(document)(n)))
+                        };
+                        const t = n.fn.on;
+                        n.fn.on = n.fn.init.prototype.on = function () {
+                            if (this[0] === window) {
+                                function e(e) {
+                                    return e.split(" ").map((e => "load" === e || 0 === e.indexOf("load.") ? "rocket-jquery-load" : e)).join(" ")
+                                }
+
+                                "string" == typeof arguments[0] || arguments[0] instanceof String ? arguments[0] = e(arguments[0]) : "object" == typeof arguments[0] && Object.keys(arguments[0]).forEach((t => {
+                                    delete Object.assign(arguments[0], {[e(t)]: arguments[0][t]})[t]
+                                }))
+                            }
+                            return t.apply(this, arguments), this
+                        }, e.allJQueries.push(n)
+                    }
+                    t = n
+                }
+            })
+        }
+
+        async _triggerDOMContentLoaded() {
+            this.domReadyFired = !0, await this._requestAnimFrame(), document.dispatchEvent(new Event("rocket-DOMContentLoaded")), await this._requestAnimFrame(), window.dispatchEvent(new Event("rocket-DOMContentLoaded")), await this._requestAnimFrame(), document.dispatchEvent(new Event("rocket-readystatechange")), await this._requestAnimFrame(), document.rocketonreadystatechange && document.rocketonreadystatechange()
+        }
+
+        async _triggerWindowLoad() {
+            await this._requestAnimFrame(), window.dispatchEvent(new Event("rocket-load")), await this._requestAnimFrame(), window.rocketonload && window.rocketonload(), await this._requestAnimFrame(), this.allJQueries.forEach((e => e(window).trigger("rocket-jquery-load"))), window.dispatchEvent(new Event("rocket-pageshow")), await this._requestAnimFrame(), window.rocketonpageshow && window.rocketonpageshow()
+        }
+
+        _handleDocumentWrite() {
+            const e = new Map;
+            document.write = document.writeln = function (t) {
+                const n = document.currentScript, r = document.createRange(), i = n.parentElement;
+                let o = e.get(n);
+                void 0 === o && (o = n.nextSibling, e.set(n, o));
+                const a = document.createDocumentFragment();
+                r.setStart(a, 0), a.appendChild(r.createContextualFragment(t)), i.insertBefore(a, o)
+            }
+        }
+
+        async _requestAnimFrame() {
+            return new Promise((e => requestAnimationFrame(e)))
+        }
+
+        static run() {
+            const e = new RocketLazyLoadScripts(["keydown", "mousemove", "touchmove", "touchstart", "touchend", "wheel"]);
+            e._addUserInteractionListener(e)
+        }
+    }
+
+    RocketLazyLoadScripts.run();</script>
+
+
+    <link rel="apple-touch-icon" sizes="60x60" href="/img/favicon/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/img/favicon/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/img/favicon/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg" color="#003399">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#ffffff">
+    <script type="rocketlazyloadscript" data-rocket-type="text/javascript"
+            src="/themes/betheme-child/script/typed.min.js"></script>
+
+
+    <!-- InstanceBeginEditable name="head" -->
+    <!-- InstanceEndEditable -->
+
+    <link rel="stylesheet" href="/anon.css">
+    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/img/favicon/apple-touch-icon-180x180.png">
+    <!-- InstanceBeginEditable name="doctitle" -->
+    <title>ARVUTITE HOOLDUS</title>
+    <!-- InstanceEndEditable -->
+	
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Source%20Sans%20Pro%3A1%2C100%2C300%2C400%2C400italic%2C500%2C600%2C700%2C900&#038;display=swap" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source%20Sans%20Pro%3A1%2C100%2C300%2C400%2C400italic%2C500%2C600%2C700%2C900&#038;display=swap" media="print" onload="this.media='all'" />
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source%20Sans%20Pro%3A1%2C100%2C300%2C400%2C400italic%2C500%2C600%2C700%2C900&#038;display=swap" /></noscript>
+    <meta name="description"
+          content="IT решения и услуги для бизнеса: ИТ Аутсорсинг, поддержка, сопровождение, ИТ аудит, ИТ консалтинг - ИТ услуги">
+
+    <link rel='stylesheet' id='classic-theme-styles-css' href='/wp-includes/css/classic-themes.min.css'
+          type='text/css' media='all'>
+    <link rel='stylesheet' id='global-styles-inline-css' href='/global-styles-inline-css.css' type='text/css'
+          media='all'>
+    <link rel='stylesheet' id='contact-form-7-css' href='/wp-content/plugins/contact-form-7/includes/css/styles.css'
+          type='text/css' media='all'>
+    <link rel='stylesheet' id='eeb-css-frontend-css'
+          href='/wp-content/plugins/email-encoder-bundle/core/includes/assets/css/style.css' type='text/css'
+          media='all'>
+    <link rel='stylesheet' id='dashicons-css' href='/wp-includes/css/dashicons.min.css' type='text/css' media='all'>
+    <link rel='stylesheet' id='mfn-be-css' href='/themes/betheme/css/be.css' type='text/css' media='all'>
+    <link rel='stylesheet' id='mfn-animations-c	ss'
+          href='/themes/betheme/assets/animations/animations.min.css' type='text/css' media='all'>
+    <link rel='stylesheet' id='mfn-font-awesome-css' href='/themes/betheme/fonts/fontawesome/fontawesome.css'
+          type='text/css' media='all'>
+    <link rel='stylesheet' id='mfn-jplayer-css'
+          href='/themes/betheme/assets/jplayer/css/jplayer.blue.monday.css' type='text/css' media='all'>
+    <link rel='stylesheet' id='mfn-responsive-css' href='/themes/betheme/css/responsive.css' type='text/css'
+          media='all'>
+    <link rel='stylesheet' id='heateor_sss_frontend_css-css'
+          href='/wp-content/plugins/sassy-social-share/public/css/sassy-social-share-public.css' type='text/css'
+          media='all'>
+    <link rel='stylesheet' id='mfn-dynamic-inline-css' href='/mfn-dynamic-inline-css.css' type='text/css' media='all'>
+    <link rel='stylesheet' id='style-css' href='/themes/betheme-child/style.css' type='text/css' media='all'>
+    <link rel='stylesheet' id='mfn-custom-inline-css' href='/mfn-custom-inline-css.css' type='text/css' media='all'>
+
+    <script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='/wp-includes/js/jquery/jquery.min.js'
+            id='jquery-core-js'></script>
+    <script type="rocketlazyloadscript" data-rocket-type='text/javascript'
+            src='/wp-includes/js/jquery/jquery-migrate.min.js' id='jquery-migrate-js'></script>
+    <script type="rocketlazyloadscript" data-rocket-type='text/javascript'
+            src='/wp-content/plugins/email-encoder-bundle/core/includes/assets/js/custom.js'
+            id='eeb-js-frontend-js'></script>
+    <script type="rocketlazyloadscript" data-rocket-type='text/javascript'
+            src='/wp-content/plugins/mrlegend-typedjs/public/js/typed.min.js' id='typed-js-js'></script>
+    <link rel="preload" as="font" href="/themes/betheme/fonts/mfn/icons.woff?31690507" crossorigin="">
+    <style id="wpsp-style-frontend"></style>
+</head>
+
+<body class="home page-template-default page page-id-76 wp-schema-pro-2.7.1  color-custom style-simple button-stroke layout-full-width no-content-padding hide-love header-classic /*sticky-header*/ sticky-white ab-hide subheader-both-center menuo-right menuo-no-borders logo-valign-top logo-overflow mobile-tb-center mobile-mini-mr-ll be-reg-240">
+
+<div id="langLinks" style="z-index: 9999;
+    position: absolute;
+    left: 10px; top:10px">
+    <div class="menu-item menu-item-type-post_type menu-item-object-page mfn-megamenu-cols-8">
+        <a id="langLink_et" class="mfn-megamenu-title" href="#">EST</a></div>
+    <div class="menu-item menu-item-type-post_type menu-item-object-page mfn-megamenu-cols-8">
+        <a id="langLink_ru" class="mfn-megamenu-title" href="#">RUS</a></div>
+    <div class="menu-item menu-item-type-post_type menu-item-object-page mfn-megamenu-cols-8">
+        <a id="langLink_en" class="mfn-megamenu-title" href="#">ENG</a></div>
+</div>
+
+<script>
+	function setLangLinkHref(id, lang) {
+        let link = document.getElementById(id);
+        var match = window.location.href.match('/pages/(.*)/(.*)');
+        link.setAttribute("href", '/pages/'+ lang + '/' + match[2]);
+    }
+    setLangLinkHref('langLink_et', 'et');
+    setLangLinkHref('langLink_ru', 'ru');
+    setLangLinkHref('langLink_en', 'en');
+	
+    setInterval(function () {
+        document.querySelectorAll("#logo > img").forEach(img => {
+            let display = window.getComputedStyle(img, null).display;
+            if(display != "none") {
+                let rect = img.getBoundingClientRect();
+                let d = document.getElementById("langLinks");
+                d.style.position = "absolute";
+                d.style.left = rect.left + 'px';
+                d.style.top = (rect.top + 3) +'px';
+            }
+        });
+    }, 200);
+</script>
+
+<div id="Wrapper">
+    <div id="Header_wrapper" class="">
+        <header id="Header">
+            <div class="header_placeholder"></div>
+
+            <div id="Top_bar" class="loading">
+
+                <div class="container">
+                    <div class="column one">
+
+                        <div class="top_bar_left clearfix">
+
+                            <div class="logo">
+                                <a id="logo" href="index.html" title="PVL GRUPP" data-height="64" data-padding="13">
+                                    <img style="transform: matrix(1.3, 0, 0, 1.3, 0, 0)" width="224" height="64"
+                                         class="logo-main scale-with-grid"
+                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20224%2064'%3E%3C/svg%3E"
+                                         data-retina="/img/retina-logo.png" data-="" alt="PVL grupp"
+                                         data-no-retina="" data-lazy-src="/img/logo.png">
+                                    <img width="50" height="50" class="logo-sticky scale-with-grid"
+                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2050%2050'%3E%3C/svg%3E"
+                                         data-retina="/img/retina-logo-stik.png" data-="" alt="PVL grupp"
+                                         data-no-retina="" data-lazy-src="/img/logo-stik.png">
+                                    <img width="224" height="64" class="logo-mobile scale-with-grid"
+                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20224%2064'%3E%3C/svg%3E"
+                                         data-retina="/img/retina-logo.png" data-="" alt="PVL grupp"
+                                         data-no-retina="" data-lazy-src="/img/logo.png">
+                                    <img width="224" height="64" class="logo-mobile-sticky scale-with-grid"
+                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20224%2064'%3E%3C/svg%3E"
+                                         data-retina="/img/retina-logo.png" data-="" alt="PVL grupp"
+                                         data-no-retina="" data-lazy-src="/img/logo.png">
+                                </a>
+                            </div>
+
+                            <div class="menu_wrapper">
+                                <nav id="menu">
+                                    <ul id="menu-main-menu" class="menu menu-main">
+                                        
+                                        <li id="menu-item-161"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page"><a
+                                                href="about.html"><span>ABOUT US</span></a></li>
+                                        <li id="menu-item-495"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children">
+                                            <a href="index.html#services"><span>IT-SERVICES</span></a></li>
+                                        <li id="menu-item-101"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page"><a
+                                                href="contact.html"><span>CONTACTS</span></a></li>
+                                        <li id="menu-item-102"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page"><a
+                                                href="price.html"><span>PRICES</span></a></li>
+										
+										
+                                    </ul>
+                                </nav>
+                                <a class="responsive-menu-toggle " href="#"><i class="icon-menu-fine"></i></a>
+                            </div>
+
+                            <div class="secondary_menu_wrapper">
+                            </div>
+
+                            <div class="banner_wrapper">
+                            </div>
+
+                            <!--
+                            <div class="search_wrapper">
+                                <form method="get" id="searchform" action="?">
+                                    <i class="icon_search icon-search-fine"></i>
+                                    <a href="#" class="icon_close"><i class="icon-cancel-fine"></i></a>
+
+                                    <input type="text" class="field" name="s" placeholder="Введите поисковый запрос">
+                                    <input type="submit" class="display-none" value="">
+                                </form>
+                            </div>
+                            -->
+                        </div>
+
+                        <div class="top_bar_right">
+                            <div class="top_bar_right_wrapper">
+                                <div class="menu_phone"><a href="tel:+37256642130">(+372) 56 642 130</a></div>
+                                <div class="menu_phone"><a href="mailto:info@pvl.ee">info@pvl.ee</a></div>
+                                <!--<a id="search_button" href="#"><i class="icon-search-fine"></i></a>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+		<!-- InstanceBeginEditable name="subheader" -->
+		<!-- InstanceEndEditable -->
+    </div>
+
+
+    <div id="Content">
+        <div class="content_wrapper clearfix">
+            <div class="sections_group">
+                <div class="entry-content" itemprop="mainContentOfPage">
+                    <!-- InstanceBeginEditable name="content" -->
+<h1>-=Services=-</h1>
+                    <!-- InstanceEndEditable -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer id="Footer" class="clearfix">
+
+        <div class="widgets_wrapper">
+            <div class="container">
+                <div class="column one-third">
+                    <aside id="text-2" class="widget widget_text">
+                        <div class="textwidget">
+                            <p style="font-size:160%; font-weight:700; color:#ffffff; padding-bottom:10px;">PVL
+                                GRUPP</p>
+                            <p style="font-size:120%; font-weight:500;">Делаем свою работу,<br>чтобы Вы могли делать
+                                свою!</p>
+                        </div>
+                    </aside>
+                </div>
+                <div class="column one-third">
+                    <aside id="text-3" class="widget widget_text">
+                        <div class="textwidget">
+                            <a href="tel:+37256642130"><span
+                                    style="font-size:160%; font-weight:700; color:#ffffff; padding-bottom:1px;">(+372) 56 642 130</span></a><br><br>
+                            <a class="button b24-web-form-popup-btn-4 has-icon button_left button_size_3 button_stroke_custom"
+                               href="contact.html" style="border-color:#1274bb!important;color:#1274bb;">
+                                <span class="button_icon"><i class="icon-email"
+                                                             style="color:#1274bb!important;"></i></span>
+                                <span class="button_label">Написать нам</span>
+                            </a>
+                        </div>
+                    </aside>
+                </div>
+                <div class="column one-third">
+                    <aside id="text-5" class="widget widget_text">
+                        <div class="textwidget">
+                            PVL GRUPP OÜ<br>
+                            REG NR.: 11034545<br>
+                            KMKR: EE100902655<br>
+                            A/a: EE731010220085113012 SEB PANK<br>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer_copy">
+            <div class="container">
+                <div class="column one" style="margin:0; padding:0; min-height:4px">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+
+<!-- mfn_hook_bottom --><!-- mfn_hook_bottom -->
+<script type="rocketlazyloadscript">
+var pseudo_links = document.querySelectorAll(".pseudo-clearfy-link");
+for (var i=0;i<pseudo_links.length;i++ ) { pseudo_links[i].addEventListener("click", function(e){   window.open( e.target.getAttribute("data-uri") ); }); }
+
+
+</script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript'
+        src='/wp-content/plugins/contact-form-7/includes/swv/js/index.js' id='swv-js'>
+</script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript'
+        src='/wp-content/plugins/contact-form-7/includes/js/index.js' id='contact-form-7-js'></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript'
+        src='/wp-content/plugins/email-encoder-bundle/core/includes/assets/js/encoder-form.js'
+        id='eeb-js-ajax-ef-js'></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' id='rocket-browser-checker-js-after'>
+"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+
+
+</script>
+<script type='text/javascript' id='rocket-preload-links-js-extra'>
+    /* <![CDATA[ */
+    var RocketPreloadLinksConfig = {
+        "excludeUris": "\/(.+\/)?feed\/?.+\/?|\/(?:.+\/)?embed\/|\/(index\\.php\/)?wp\\-json(\/.*|$)|\/wp-admin\/|\/logout\/|\/wp-login.php",
+        "usesTrailingSlash": "1",
+        "imageExt": "jpg|jpeg|gif|png|tiff|bmp|webp|avif",
+        "fileExt": "jpg|jpeg|gif|png|tiff|bmp|webp|avif|php|pdf|html|htm",
+        "siteUrl": "https:\/\/pvl.ee",
+        "onHoverDelay": "100",
+        "rateThrottle": "3"
+    };
+    /* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' id='rocket-preload-links-js-after'>
+(function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+
+
+</script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='/wp-includes/js/jquery/ui/core.min.js'
+        id='jquery-ui-core-js'></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='/wp-includes/js/jquery/ui/tabs.min.js'
+        id='jquery-ui-tabs-js'></script>
+<script type='text/javascript' id='mfn-plugins-js-extra'>
+    /* <![CDATA[ */
+    var mfn = {
+        "mobileInit": "1240",
+        "parallax": "translate3d",
+        "responsive": "1",
+        "sidebarSticky": "",
+        "lightbox": {"disable": false, "disableMobile": false, "title": false},
+        "slider": {"blog": 0, "clients": 0, "offer": 0, "portfolio": 0, "shop": 0, "slider": 0, "testimonials": 0}
+    };
+    /* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='/themes/betheme/js/plugins.js'
+        id='mfn-plugins-js'></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='/themes/betheme/js/menu.js'
+        id='mfn-menu-js'></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript'
+        src='/themes/betheme/assets/animations/animations.min.js' id='mfn-animations-js'></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript'
+        src='/themes/betheme/assets/jplayer/jplayer.min.js' id='mfn-jplayer-js'></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript'
+        src='/themes/betheme/js/parallax/translate3d.js' id='mfn-parallax-js'></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='/themes/betheme/js/scripts.js'
+        id='mfn-scripts-js'></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' id='mfn-scripts-js-after'>
+jQuery(function($){
+	$(document).ready(function(){
+		$(".logoall").click(function(){
+			if($(".logoall > .button_label").text() == "Показать всеx"){
+				var lsetw = $("#lset").width();
+				var lseth = 130 * Math.ceil(60 / (Math.floor(lsetw / 297)));
+				$("#lset").stop().animate({height:lseth}, 500);
+				$(".logoall > .button_label").text('Скрыть');
+				$(".logoall > .button_icon > i").toggleClass("icon-up");
+			} else {
+				$("#lset").stop().animate({height:"260px"}, 500);
+				$(".logoall > .button_label").text('Показать всеx');
+				$(".logoall > .button_icon > i").toggleClass("icon-up");
+			}
+		});
+		
+		$(".ptlogoall").click(function(){
+			if($(".ptlogoall > .button_label").text() == "Показать всеx"){
+				var plsetw = $("#plset").width();
+				var plseth = 130 * Math.ceil(66 / (Math.floor(plsetw / 186)));
+				$("#plset").stop().animate({height:plseth}, 500);
+				$(".ptlogoall > .button_label").text('Скрыть');
+				$(".ptlogoall > .button_icon > i").toggleClass("icon-up");
+			} else {
+				$("#plset").stop().animate({height:"260px"}, 500);
+				$(".ptlogoall > .button_label").text('Показать всеx');
+				$(".ptlogoall > .button_icon > i").toggleClass("icon-up");
+			}
+		});
+	});
+});
+
+
+</script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript'
+        src='/wp-includes/js/dist/vendor/wp-polyfill-inert.min.js' id='wp-polyfill-inert-js'></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript'
+        src='/wp-includes/js/dist/vendor/regenerator-runtime.min.js' id='regenerator-runtime-js'></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript'
+        src='/wp-includes/js/dist/vendor/wp-polyfill.min.js' id='wp-polyfill-js'></script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QEV1Z7BBFQ"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-QEV1Z7BBFQ');
+	gtag('config', 'G-LXZMECLPKZ');
+</script>
+</body>
+<!-- InstanceEnd --></html>
