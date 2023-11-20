@@ -390,7 +390,7 @@
                             <a href="tel:+37256642130"><span
                                     style="font-size:160%; font-weight:700; color:#ffffff; padding-bottom:1px;">(+372) 56 642 130</span></a><br><br>
                             <a class="button b24-web-form-popup-btn-4 has-icon button_left button_size_3 button_stroke_custom"
-                               href="contact.html" style="border-color:#1274bb!important;color:#1274bb;">
+                               href="contact.html" style="min-width: 155px; border-color:#1274bb!important;color:#1274bb;">
                                 <span class="button_icon"><i class="icon-email"
                                                              style="color:#1274bb!important;"></i></span>
                                 <span class="button_label"><!-- TemplateBeginEditable name="footerEmailButtonText" -->Написать нам<!-- TemplateEndEditable --></span>
