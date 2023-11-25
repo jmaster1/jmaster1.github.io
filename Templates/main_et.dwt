@@ -303,13 +303,13 @@
                                         <!-- InstanceBeginEditable name="menu" -->
                                         <li id="menu-item-161"
                                             class="menu-item menu-item-type-post_type menu-item-object-page"><a
-                                                href="../pages/et/index.html"><span>MEIST</span></a></li>
+                                                href="../pages/et/index.html"><span>MEIE KOHTA</span></a></li>
                                         <li id="menu-item-495"
                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children">
-                                            <a href="../pages/et/services.html"><span>IT_TEENUSED</span></a></li>
+                                            <a href="../pages/et/services.html"><span>IT-TEENUSED</span></a></li>
                                         <li id="menu-item-101"
                                             class="menu-item menu-item-type-post_type menu-item-object-page"><a
-                                                href="../pages/et/contact.html"><span>KONTAKT</span></a></li>
+                                                href="../pages/et/contact.html"><span>KONTAKTID</span></a></li>
                                         <li id="menu-item-102"
                                             class="menu-item menu-item-type-post_type menu-item-object-page"><a
                                                 href="../pages/et/price.html"><span>HINNAD</span></a></li>
