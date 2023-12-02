@@ -522,8 +522,36 @@
         xhr.send(formData);
     }
 </script>
+<style>
+    .infoLine {
+        margin-bottom: 4px;
+    }
+    @media screen and (max-width: 766px) {
+        .colorBoxesWrapper {
+            padding-left: 0px;
+        }
+        .greenBox {
+            padding-right: 0px;
+        }
+        .yellowBox {
+            padding-left: 0px;
+        }
+    }
 
-                  <div class="column mcb-column mcb-item-5bec592ef one-second column_column" style="margin-bottom: 20px; padding-left: 20px">
+    @media screen and (min-width: 767px) {
+        .colorBoxesWrapper {
+            padding-left: 20px;
+        }
+        .greenBox {
+            padding-right: 10px;
+        }
+        .yellowBox {
+            padding-left: 10px;
+        }
+    }
+</style>
+
+                  <div class="column mcb-column mcb-item-5bec592ef one-second column_column colorBoxesWrapper" style="margin-bottom: 20px">
                     <div class="column_attr clearfix">
                         <h2 style="font-size: 22pt; font-weight: 500; text-align: center">PVL IT-teenused äriklientidele ja eraisikutele!</h2>
 						<hr style="height:1px; background-color:#626262; margin-left: 6px; width: 98%">
@@ -531,11 +559,7 @@
                         <!--blue -->
                       <div class="one column mcb-column mcb-item-962a836d3 column_column">
                         <div class="column_attr clearfix" style="background-color:#3a80f1;padding:16px 8% 10px; color: #fff; font-size: 17px">
-                            <style>
-                                .infoLine {
-                                    margin-bottom: 4px;
-                                }
-                            </style>
+
                           <h3 style="color: #fff;"><strong>PVL GRUPP OÜ</strong></h3>
                           <div class="infoLine">REG NR.: 11034545</div>
                           <div class="infoLine">KMKR: EE100902655</div>
@@ -547,7 +571,7 @@
                     </div>
 
                       <!--green -->
-                      <div class="column mcb-column mcb-item-1170ef77c  one-second column_column" style="padding-right: 10px">
+                      <div class="column mcb-column mcb-item-1170ef77c  one-second column_column greenBox" style="">
                           <div class="column_attr clearfix align_center" style="background-color:#1d9e3f;padding:20px 8% 20px;">
                               <div class="image_frame image_item no_link scale-with-grid alignnone no_border">
                                   <div class="image_wrapper"> <img width="100" height="100" class="scale-with-grid lazyloaded" src="/img/paper_plane.png" alt="КОНТАКТЫ И ПОДДЕРЖКА" title="" data-ll-status="loaded"> </div>
@@ -559,7 +583,7 @@
                       </div>
 
                       <!-- yellow -->
-                      <div class="column mcb-column mcb-item-10ac8dd93 one-second column_column float-end"  style="padding-left: 10px">
+                      <div class="column mcb-column mcb-item-10ac8dd93 one-second column_column float-end yellowBox">
                           <div class="column_attr clearfix align_center" style="background-color:#f1b500;padding:20px 8% 20px;">
                               <div class="image_frame image_item no_link scale-with-grid alignnone no_border">
                                   <div class="image_wrapper"><img width="100" height="100" class="scale-with-grid lazyloaded" src="/img/old_telephone.png" alt="КОНТАКТЫ И ПОДДЕРЖКА" title="" data-ll-status="loaded">
