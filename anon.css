@@ -60,3 +60,31 @@ div.heateor_sss_mobile_footer{display:none;}@media screen and (max-width:1024px)
     text-align: center;
     line-height: 26px;
 }
+
+.infoLine {
+    margin-bottom: 4px;
+}
+
+@media screen and (max-width: 766px) {
+    .colorBoxesWrapper {
+        padding-left: 0px;
+    }
+    .greenBox {
+        padding-right: 0px;
+    }
+    .yellowBox {
+        padding-left: 0px;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .colorBoxesWrapper {
+        padding-left: 20px;
+    }
+    .greenBox {
+        padding-right: 10px;
+    }
+    .yellowBox {
+        padding-left: 10px;
+    }
+}
