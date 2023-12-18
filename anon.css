@@ -87,4 +87,10 @@ div.heateor_sss_mobile_footer{display:none;}@media screen and (max-width:1024px)
     .yellowBox {
         padding-left: 10px;
     }
+    .itmeesWrapper {
+        transform: translateX(-30px)
+    }
+    .taglineBox {
+        transform: translateX(10px)
+    }
 }
