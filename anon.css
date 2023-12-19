@@ -94,3 +94,14 @@ div.heateor_sss_mobile_footer{display:none;}@media screen and (max-width:1024px)
         transform: translateX(10px)
     }
 }
+
+.serviceTitle {
+    font-size: 17px;
+    font-weight: 600;
+    border: solid 0px red;
+    color: black;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
