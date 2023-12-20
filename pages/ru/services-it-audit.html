@@ -38,41 +38,25 @@
           content="обслуживание компьютеров, срочная компьютерная помощь, ремонт компьютеров, ремонт, ИТ услуги, удаленное обслуживание, удаленная помощь, компьютеры, поддержка, ИТ-аудит, компьютерные услуги">
 	
 	
-    <link rel='stylesheet' id='classic-theme-styles-css' href='/wp-includes/css/classic-themes.min.css'
-          type='text/css' media='all'>
-    <link rel='stylesheet' id='global-styles-inline-css' href='/global-styles-inline-css.css' type='text/css'
-          media='all'>
-    <link rel='stylesheet' id='contact-form-7-css' href='/wp-content/plugins/contact-form-7/includes/css/styles.css'
-          type='text/css' media='all'>
-    <link rel='stylesheet' id='eeb-css-frontend-css'
-          href='/wp-content/plugins/email-encoder-bundle/core/includes/assets/css/style.css' type='text/css'
-          media='all'>
+    <link rel='stylesheet' id='classic-theme-styles-css' href='/wp-includes/css/classic-themes.min.css' type='text/css' media='all'>
+    <link rel='stylesheet' id='global-styles-inline-css' href='/global-styles-inline-css.css' type='text/css' media='all'>
+    <link rel='stylesheet' id='contact-form-7-css' href='/wp-content/plugins/contact-form-7/includes/css/styles.css' type='text/css' media='all'>
+    <link rel='stylesheet' id='eeb-css-frontend-css' href='/wp-content/plugins/email-encoder-bundle/core/includes/assets/css/style.css' type='text/css' media='all'>
     <link rel='stylesheet' id='dashicons-css' href='/wp-includes/css/dashicons.min.css' type='text/css' media='all'>
     <link rel='stylesheet' id='mfn-be-css' href='/themes/betheme/css/be.css' type='text/css' media='all'>
-    <link rel='stylesheet' id='mfn-animations-c	ss'
-          href='/themes/betheme/assets/animations/animations.min.css' type='text/css' media='all'>
-    <link rel='stylesheet' id='mfn-font-awesome-css' href='/themes/betheme/fonts/fontawesome/fontawesome.css'
-          type='text/css' media='all'>
-    <link rel='stylesheet' id='mfn-jplayer-css'
-          href='/themes/betheme/assets/jplayer/css/jplayer.blue.monday.css' type='text/css' media='all'>
-    <link rel='stylesheet' id='mfn-responsive-css' href='/themes/betheme/css/responsive.css' type='text/css'
-          media='all'>
-    <link rel='stylesheet' id='heateor_sss_frontend_css-css'
-          href='/wp-content/plugins/sassy-social-share/public/css/sassy-social-share-public.css' type='text/css'
-          media='all'>
+    <link rel='stylesheet' id='mfn-animations-css' href='/themes/betheme/assets/animations/animations.min.css' type='text/css' media='all'>
+    <link rel='stylesheet' id='mfn-font-awesome-css' href='/themes/betheme/fonts/fontawesome/fontawesome.css' type='text/css' media='all'>
+    <link rel='stylesheet' id='mfn-jplayer-css' href='/themes/betheme/assets/jplayer/css/jplayer.blue.monday.css' type='text/css' media='all'>
+    <link rel='stylesheet' id='mfn-responsive-css' href='/themes/betheme/css/responsive.css' type='text/css' media='all'>
+    <link rel='stylesheet' id='heateor_sss_frontend_css-css' href='/wp-content/plugins/sassy-social-share/public/css/sassy-social-share-public.css' type='text/css' media='all'>
     <link rel='stylesheet' id='mfn-dynamic-inline-css' href='/mfn-dynamic-inline-css.css' type='text/css' media='all'>
     <link rel='stylesheet' id='style-css' href='/themes/betheme-child/style.css' type='text/css' media='all'>
     <link rel='stylesheet' id='mfn-custom-inline-css' href='/mfn-custom-inline-css.css' type='text/css' media='all'>
-
-    <script  src='/wp-includes/js/jquery/jquery.min.js'
-            id='jquery-core-js'></script>
-    <script
-            src='/wp-includes/js/jquery/jquery-migrate.min.js' id='jquery-migrate-js'></script>
-    <script
-            src='/wp-content/plugins/email-encoder-bundle/core/includes/assets/js/custom.js'
-            id='eeb-js-frontend-js'></script>
-    <script
-            src='/wp-content/plugins/mrlegend-typedjs/public/js/typed.min.js' id='typed-js-js'></script>
+    <script src='/wp-includes/js/jquery/jquery.min.js' id='jquery-core-js'></script>
+    <script src='/wp-includes/js/jquery/jquery-migrate.min.js' id='jquery-migrate-js'></script>
+    <script src='/wp-content/plugins/email-encoder-bundle/core/includes/assets/js/custom.js' id='eeb-js-frontend-js'></script>
+    <script src='/wp-content/plugins/mrlegend-typedjs/public/js/typed.min.js' id='typed-js-js'></script>
+	<script src="/shared.js"></script>
     <link rel="preload" as="font" href="/themes/betheme/fonts/mfn/icons.woff?31690507" crossorigin="">
     <style id="wpsp-style-frontend"></style>
 </head>
@@ -89,30 +73,6 @@
     <div class="menu-item menu-item-type-post_type menu-item-object-page mfn-megamenu-cols-8">
         <a id="langLink_en" class="mfn-megamenu-title" href="#">ENG</a></div>
 </div>
-
-<script>
-	function setLangLinkHref(id, lang) {
-        let link = document.getElementById(id);
-        var match = window.location.href.match('/pages/(.*)/(.*)');
-        link.setAttribute("href", '/pages/'+ lang + '/' + match[2]);
-    }
-    setLangLinkHref('langLink_et', 'et');
-    setLangLinkHref('langLink_ru', 'ru');
-    setLangLinkHref('langLink_en', 'en');
-	
-    setInterval(function () {
-        document.querySelectorAll("#logo > img").forEach(img => {
-            let display = window.getComputedStyle(img, null).display;
-            if(display != "none") {
-                let rect = img.getBoundingClientRect();
-                let d = document.getElementById("langLinks");
-                d.style.position = "absolute";
-                d.style.left = rect.left + 'px';
-                d.style.top = (rect.top + 3) +'px';
-            }
-        });
-    }, 200);
-</script>
 
 <div id="Wrapper">
     <div id="Header_wrapper" class="">
@@ -177,17 +137,6 @@
                             <div class="banner_wrapper">
                             </div>
 
-                            <!--
-                            <div class="search_wrapper">
-                                <form method="get" id="searchform" action="?">
-                                    <i class="icon_search icon-search-fine"></i>
-                                    <a href="#" class="icon_close"><i class="icon-cancel-fine"></i></a>
-
-                                    <input type="text" class="field" name="s" placeholder="Введите поисковый запрос">
-                                    <input type="submit" class="display-none" value="">
-                                </form>
-                            </div>
-                            -->
                         </div>
 
                         <div class="top_bar_right">
@@ -300,19 +249,11 @@
 
 
 <!-- mfn_hook_bottom --><!-- mfn_hook_bottom -->
-<script
-        src='/wp-content/plugins/contact-form-7/includes/swv/js/index.js' id='swv-js'>
-</script>
-<script
-        src='/wp-content/plugins/contact-form-7/includes/js/index.js' id='contact-form-7-js'></script>
-<script
-        src='/wp-content/plugins/email-encoder-bundle/core/includes/assets/js/encoder-form.js'
-        id='eeb-js-ajax-ef-js'></script>
-
-<script  src='/wp-includes/js/jquery/ui/core.min.js'
-        id='jquery-ui-core-js'></script>
-<script  src='/wp-includes/js/jquery/ui/tabs.min.js'
-        id='jquery-ui-tabs-js'></script>
+<script src='/wp-content/plugins/contact-form-7/includes/swv/js/index.js' id='swv-js'></script>
+<script src='/wp-content/plugins/contact-form-7/includes/js/index.js' id='contact-form-7-js'></script>
+<script src='/wp-content/plugins/email-encoder-bundle/core/includes/assets/js/encoder-form.js' id='eeb-js-ajax-ef-js'></script>
+<script src='/wp-includes/js/jquery/ui/core.min.js' id='jquery-ui-core-js'></script>
+<script src='/wp-includes/js/jquery/ui/tabs.min.js' id='jquery-ui-tabs-js'></script>
 <script type='text/javascript' id='mfn-plugins-js-extra'>
     /* <![CDATA[ */
     var mfn = {
@@ -325,59 +266,15 @@
     };
     /* ]]> */
 </script>
-<script  src='/themes/betheme/js/plugins.js'
-        id='mfn-plugins-js'></script>
-<script  src='/themes/betheme/js/menu.js'
-        id='mfn-menu-js'></script>
-<script
-        src='/themes/betheme/assets/animations/animations.min.js' id='mfn-animations-js'></script>
-<script
-        src='/themes/betheme/assets/jplayer/jplayer.min.js' id='mfn-jplayer-js'></script>
-<script
-        src='/themes/betheme/js/parallax/translate3d.js' id='mfn-parallax-js'></script>
-<script  src='/themes/betheme/js/scripts.js'
-        id='mfn-scripts-js'></script>
-<script  id='mfn-scripts-js-after'>
-jQuery(function($){
-	$(document).ready(function(){
-		$(".logoall").click(function(){
-			if($(".logoall > .button_label").text() == "Показать всеx"){
-				var lsetw = $("#lset").width();
-				var lseth = 130 * Math.ceil(60 / (Math.floor(lsetw / 297)));
-				$("#lset").stop().animate({height:lseth}, 500);
-				$(".logoall > .button_label").text('Скрыть');
-				$(".logoall > .button_icon > i").toggleClass("icon-up");
-			} else {
-				$("#lset").stop().animate({height:"260px"}, 500);
-				$(".logoall > .button_label").text('Показать всеx');
-				$(".logoall > .button_icon > i").toggleClass("icon-up");
-			}
-		});
-		
-		$(".ptlogoall").click(function(){
-			if($(".ptlogoall > .button_label").text() == "Показать всеx"){
-				var plsetw = $("#plset").width();
-				var plseth = 130 * Math.ceil(66 / (Math.floor(plsetw / 186)));
-				$("#plset").stop().animate({height:plseth}, 500);
-				$(".ptlogoall > .button_label").text('Скрыть');
-				$(".ptlogoall > .button_icon > i").toggleClass("icon-up");
-			} else {
-				$("#plset").stop().animate({height:"260px"}, 500);
-				$(".ptlogoall > .button_label").text('Показать всеx');
-				$(".ptlogoall > .button_icon > i").toggleClass("icon-up");
-			}
-		});
-	});
-});
-
-
-</script>
-<script
-        src='/wp-includes/js/dist/vendor/wp-polyfill-inert.min.js' id='wp-polyfill-inert-js'></script>
-<script
-        src='/wp-includes/js/dist/vendor/regenerator-runtime.min.js' id='regenerator-runtime-js'></script>
-<script
-        src='/wp-includes/js/dist/vendor/wp-polyfill.min.js' id='wp-polyfill-js'></script>
+<script src='/themes/betheme/js/plugins.js' id='mfn-plugins-js'></script>
+<script src='/themes/betheme/js/menu.js' id='mfn-menu-js'></script>
+<script src='/themes/betheme/assets/animations/animations.min.js' id='mfn-animations-js'></script>
+<script src='/themes/betheme/assets/jplayer/jplayer.min.js' id='mfn-jplayer-js'></script>
+<script src='/themes/betheme/js/parallax/translate3d.js' id='mfn-parallax-js'></script>
+<script src='/themes/betheme/js/scripts.js' id='mfn-scripts-js'></script>
+<script src='/wp-includes/js/dist/vendor/wp-polyfill-inert.min.js' id='wp-polyfill-inert-js'></script>
+<script src='/wp-includes/js/dist/vendor/regenerator-runtime.min.js' id='regenerator-runtime-js'></script>
+<script src='/wp-includes/js/dist/vendor/wp-polyfill.min.js' id='wp-polyfill-js'></script>
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-QEV1Z7BBFQ"></script>
