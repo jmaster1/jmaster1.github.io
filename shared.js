@@ -62,3 +62,12 @@ jQuery(function($){
         });
     });
 });
+
+function scroll0() {
+    window.scrollTo(0,0);
+}
+
+window.onload = function(){
+    scroll0();
+    setTimeout(scroll0, 111);
+}
