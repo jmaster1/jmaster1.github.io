@@ -105,3 +105,20 @@ div.heateor_sss_mobile_footer{display:none;}@media screen and (max-width:1024px)
     justify-content: center;
     width: 100%;
 }
+
+.logoLink {
+    display: block;
+    width: 90px;
+    height: 84px;
+    border: solid 0px red;
+    position: absolute;
+    left: 10px;
+    top: 2px;
+    z-index: 11111;
+}
+
+.langLinks {
+    z-index: 9999;
+    position: absolute;
+    left: 10px; top:10px
+}

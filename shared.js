@@ -19,6 +19,13 @@ setInterval(function () {
             d.style.position = "absolute";
             d.style.left = rect.left + 'px';
             d.style.top = (rect.top + 3) +'px';
+
+            let l = document.getElementById("logoLink");
+            l.style.position = "absolute";
+            l.style.left = (rect.left + 36) + 'px';
+            l.style.top = (rect.top + 0) +'px';
+            l.style.width = (rect.height + 15) + 'px';
+            l.style.height = rect.height + 'px';
         }
     });
 }, 200);
