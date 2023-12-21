@@ -122,3 +122,11 @@ div.heateor_sss_mobile_footer{display:none;}@media screen and (max-width:1024px)
     position: absolute;
     left: 10px; top:10px
 }
+
+.top_bar_right_wrapper {
+    padding-top: 2px;
+}
+
+.responsive-menu-toggle  {
+    transform: matrix(1.3, 0, 0, 1.3, 0, 0);
+}
