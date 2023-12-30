@@ -39,7 +39,38 @@ function mail_attachment ($from , $to, $subject, $message, $attachmentFile, $att
         die("Sorry but the email could not be sent. Please go back and try again!");
     }
 }
+
+function validateCaptchaToken($token) {
+    $url = 'https://www.google.com/recaptcha/api/siteverify';
+    $data = [
+        'secret' => '6Lf3RXcoAAAAACQy7GFr2i9Go8WmpKmwJI5eBuOh',
+        'response' => $token
+    ];
+
+    // use key 'http' even if you send the request to https://...
+    $options = [
+        'http' => [
+            'header' => "Content-type: application/x-www-form-urlencoded\r\n",
+            'method' => 'POST',
+            'content' => http_build_query($data),
+        ],
+    ];
+
+    $context = stream_context_create($options);
+    $result = file_get_contents($url, false, $context);
+    echo $result;
+    $json = json_decode($result);
+    $success = $json->success;
+
+    echo "\nsuccess=" . var_dump($success);
+    if ($success === false) {
+        die("invalid token");
+    }
+}
+
 echo "<pre>";
+$captchaToken = $_REQUEST['captchaToken'];
+validateCaptchaToken($captchaToken);
 $to = "info@pvl.ee";
 $from = $_REQUEST['email'];
 $name = $_REQUEST['name'];

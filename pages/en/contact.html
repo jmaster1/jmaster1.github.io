@@ -191,7 +191,6 @@
                                     <span id="spinner" class="loader"></span>
                                 </div>
                             </div>
-                            <script src="/contact.js"></script>
 
                           <form id="contactForm" action="https://pvl.ee/sendmail.php" method="post"
                                       class="wpcf7-form init" aria-label="Contact form"
@@ -282,71 +281,7 @@
                       </div>
                     </div>
                   </div>
-
-<script type="text/javascript">
-    var form = document.getElementById('contactForm');
-    var fileSelect = document.getElementById('file');
-
-    form.onsubmit = function(event) {
-        event.preventDefault();
-
-        var files = fileSelect.files;
-        var formData = new FormData();
-        formData.append("name", document.getElementById('name').value);
-        formData.append("email", document.getElementById('email').value);
-        formData.append("phone", document.getElementById('phone').value);
-        formData.append("subject", document.getElementById('subject').value);
-        formData.append("message", document.getElementById('message').value);
-        if(files.length > 0) {
-            let file = files[0];
-            formData.append('file', file, file.name);
-        }
-        document.getElementById("contactForm").style.visibility = "hidden";
-        document.getElementById("formOverlay").style.visibility = "visible";
-                var xhr = new XMLHttpRequest();
-        xhr.open('POST', 'https://pvl.ee/sendmail.php', true);
-
-        xhr.onload = function (e) {
-            document.getElementById("messageSent").style.visibility = "visible";
-            document.getElementById("spinner").style.visibility = "hidden";
-            console.log("onload=" + e);
-            if (xhr.status === 200) {
-
-            } else {
-                alert('An error occurred!');
-            }
-        };
-        xhr.send(formData);
-    }
-</script>
-<style>
-    .infoLine {
-        margin-bottom: 4px;
-    }
-    @media screen and (max-width: 766px) {
-        .colorBoxesWrapper {
-            padding-left: 0px;
-        }
-        .greenBox {
-            padding-right: 0px;
-        }
-        .yellowBox {
-            padding-left: 0px;
-        }
-    }
-
-    @media screen and (min-width: 767px) {
-        .colorBoxesWrapper {
-            padding-left: 20px;
-        }
-        .greenBox {
-            padding-right: 10px;
-        }
-        .yellowBox {
-            padding-left: 10px;
-        }
-    }
-</style>
+<script src="/contact.js"></script>
 
                   <div class="column mcb-column mcb-item-5bec592ef one-second column_column colorBoxesWrapper" style="margin-bottom: 20px">
                     <div class="column_attr clearfix">
